@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+body{
+  /* font-family: 'lemon-light';
+  font-family: 'lemon-regular';
+  font-family: 'Bodoni-bk'; */
+  /* font-family: "Bodoni Moda", system-ui; */
+  /* font-family: "GFS Didot", system-ui; */
+}
+
+
+@font-face {
+  font-family: 'lemon-light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Eina03-Light'), url('../src/assets/fonts/LEMONMILK-Light.otf') format('woff');
+}
+
+@font-face {
+  font-family: 'lemon-regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Eina03-Light'), url('../src/assets/fonts/LEMONMILK-Regular.otf') format('woff');
+}
+@font-face {
+  font-family: 'Bodoni-bk';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Eina03-Light'), url('../src/assets/fonts/bodonbk.ttf') format('woff');
+}
+
+@font-face {
+  font-family: 'BodoniModa';
+  /* font-style: normal;
+  font-weight: normal; */
+  src: local('Eina03-Light'), url('../src/assets/fonts/BodoniModa-VariableFont_opsz\,wght.ttf') format('woff');
+}
+
+
+
+:root {
+  /* Primary Colors */
+  --gold: #B78F4A; 
+  --darkGold:#725d39;
+  --lightGreen: #3b7e32;
+  --darkGreen: #163013;
+  --lightGrey:#4f4f4f;
+  --darkGrey:#010101;
+  --green:#4BA040;
+
+
+  /* Neutral Colors */
+  --neutral-color-light: #ecf0f1; /* Light Gray */
+  --neutral-color: #bdc3c7; /* Gray */
+  --neutral-color-dark: #7f8c8d; /* Dark Gray */
+
+  /* Accent Colors */
+  --accent-color: #f1c40f; /* Yellow */
+  --accent-color-light: #f7dc6f;
+  --accent-color-dark: #f39c12;
+
+  /* Background and Text Colors */
+  --background-color: #ffffff; /* White */
+  --text-color: #333333; /* Dark Text */
+  --text-color-light: #666666; /* Light Text */
+  --text-color-inverse: #ffffff; /* Inverse Text */
+}

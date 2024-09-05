@@ -1,0 +1,150 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 94%;
+  margin: auto;
+
+}
+.container h2{
+  font-family: 'Bodoni-bk'; 
+  font-size: 46px;
+  letter-spacing: 3px;
+
+}
+.content{
+  display: grid;
+  grid-template-columns: 6fr 4fr ;
+  gap: 20px;
+  align-items: center;
+}
+
+.left h1{
+  font-family: "GFS Didot", system-ui;
+  font-size:12rem;
+  letter-spacing: 1rem;
+  color: var(--gold);
+  font-weight: 500;
+}
+.left p{
+  font-size: 20px;
+  font-family: "GFS Didot", system-ui;
+
+
+}
+
+.form {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.input,
+.inputContact,
+.countrySelect {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+
+.countrySelect {
+  border-radius: 4px 0 0 4px;
+  background-color: #f0f0f0;
+  width: 25%;
+}
+
+.inputContact {
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+}
+
+.contactWrapper {
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.submitButton {
+  display: block;
+  padding: 10px 40px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: absolute;
+  bottom: 10px;
+  right: -50px;
+}
+
+.submitButton:hover {
+  background-color: #333;
+}
+
+
+@media(max-width:1200px){
+  .submitButton {
+  position: relative;
+  width: 100%;
+  right: 0;
+}
+}
+
+@media(max-width:1200px){
+
+.left h1{
+  font-family: "GFS Didot", system-ui;
+  font-size:8rem;
+  letter-spacing: 1rem;
+  color: var(--gold);
+  font-weight: 500;
+}}
+
+@media(max-width:900px){
+
+.left h1{
+  font-size:6rem;
+}}
+
+@media(max-width:700px){
+  .content{
+ display: flex;flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+.left h1{
+  font-size:5rem;
+}
+.container h2{
+  font-family: 'Bodoni-bk'; 
+  font-size: 30px;
+  letter-spacing: 3px;
+margin-bottom: 20px;
+}
+.left p{
+  font-size: 17px;
+  font-family: "GFS Didot", system-ui;
+
+
+}
+}

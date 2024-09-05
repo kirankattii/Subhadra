@@ -1,0 +1,165 @@
+.container{
+  min-height: 100vh;
+  font-family: 'Bodoni-bk'; 
+  width: 90%;
+  margin: auto;
+  padding-top: 60px;
+ padding-bottom: 50px;
+}
+.container .textImg {
+  display: flex;align-items: end;
+  justify-content: end;
+}
+.container .textImg img{
+width: 60%;
+  padding-top: 40px;
+}
+.description{
+  display: flex;flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  
+}
+.description h2{
+  font-size: 36px;
+  font-weight: 500;
+}
+.description p{
+  font-size: 20px;
+  max-width: 850px;
+}
+.mainContent{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-top: 50px;
+}
+.specification{
+  display: flex;flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.specification ul{
+  list-style: none;
+  display: flex;flex-direction: column;
+  gap: 8px;
+}
+.specification ul li{
+  font-size: 22px;
+}
+.specification h2{
+  font-size: 2.5rem;
+  color: var(--gold);
+}
+.images{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+
+}
+.images p{
+  width: 80%;
+  text-align: justify;
+  font-size: 17px;
+}
+
+.images img{
+  width: 65%;
+}
+.stone{
+  position: absolute;
+  top: -64%;
+  left: 38%;
+}
+.stone img{
+  width: 120%;
+}
+
+@media(max-width:1250px){
+  .stone{
+  position: absolute;
+  top: -30%;
+  left: 50%;
+}
+.stone img{
+  width: 80%;
+}
+}
+@media(max-width:1000px){
+  .specification{
+  display: flex;flex-direction: column;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+.specification h2{
+  font-size: 2rem;
+  color: var(--gold);
+}
+.specification ul{
+  list-style: none;
+  display: flex;flex-direction: column;
+  gap: 8px;
+}
+.specification ul li{
+  font-size: 18px;
+}
+.images p{
+ 
+  align-items: end;
+}
+}
+
+
+
+@media(max-width:700px){
+  .container{
+    width: 95%;
+  }
+  .container .textImg img{
+width: 90%;
+  padding-top: 40px;
+}
+  .description h2{
+  font-size: 24px;
+  font-weight: normal;
+  margin: 10px 0;
+}
+.description p{
+  font-size: 19px;
+}
+  .mainContent{
+
+  flex-direction: column-reverse;
+  width: 100%;
+  margin-top: 100px;
+}
+.specification{
+  display: flex;flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  margin-top: 30px;
+}
+.images p{
+  width: 96%;
+  text-align: justify;
+  font-size: 17px;
+}
+
+.images img{
+  width: 90%;
+}
+.stone{
+  position: absolute;
+  top: -35%;
+  left: 38%;
+}
+.stone img{
+  width: 100%;
+}
+
+
+}

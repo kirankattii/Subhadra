@@ -1,0 +1,30 @@
+.stones{
+  display: flex;flex-direction: column;
+  gap: 200px;
+  margin-top: 200px;
+}
+
+@media(max-width:1000px){
+  .stones{
+  display: flex;flex-direction: column;
+  gap: 80px;
+  margin-top: 50px;
+}
+}
+
+@media(max-width:800px){
+  .stones{
+  display: flex;flex-direction: column;
+  gap: 00px;
+  margin-top: 0px;
+}
+}
+
+
+@media(max-width:600px){
+  .stones{
+  display: flex;flex-direction: column;
+  gap: 00px;
+  margin-top: 50px;
+}
+}

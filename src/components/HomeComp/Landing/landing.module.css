@@ -1,0 +1,96 @@
+.landing{
+  width: 100%;
+  background: url('../../../assets/images//homeGif.gif');
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:relative;
+}
+.homeBg{
+  margin-top: 7.5rem;
+  margin-left: 4.5rem;
+}
+.homeBg img{
+width: 75%;
+
+}
+
+.difining{
+  font-size: 8vw;
+  color: var(--gold);
+}
+.luxury {
+background: var(--darkGold);
+background: linear-gradient(90deg, var(--darkGold) 0%, var(--gold) 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block; 
+  font-size: 12vw;
+  margin-top: -2rem;
+}
+
+.landing{
+  display: flex;
+}
+.homeContent{
+  position: absolute;
+  right:4%;
+  bottom: 6%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+@media(max-width:1000px){
+  .difining{
+  font-size: 14vw;
+}
+.luxury {
+  font-size: 18vw;
+}
+}
+
+@media(max-width:600px){
+
+.homeBg{
+  margin-top: 8rem;
+  padding: 0 20px;
+  margin-left: 0rem;
+}
+.homeBg img{
+width: 100%;
+
+}
+.luxury {
+  font-size: 18vw;
+  margin-top: -1rem;
+}
+}
+
+
+@media(max-width:450px){
+
+.homeBg{
+  margin-top: 6rem;
+  padding: 0 10px;
+  margin-left: 0rem;
+}
+.homeBg img{
+width: 100%;
+
+}
+.luxury {
+  font-size: 22vw;
+  margin-top: -1rem;
+}
+.difining{
+  font-size: 17vw;
+  color: var(--gold);
+}
+.homeContent{
+  right:2%;
+}
+
+}

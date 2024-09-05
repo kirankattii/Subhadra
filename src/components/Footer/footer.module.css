@@ -1,0 +1,95 @@
+.container{
+  width: 94%;
+  margin: auto;
+  font-family: "GFS Didot", system-ui;
+
+}
+.footer{
+  background: #000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  padding: 20px 40px;
+  padding-right: 80px;
+}
+.footer .contact{
+  /* width: 100%; */
+  display: flex;
+  gap: 13vw;
+  
+}
+.contact p{
+  font-size: 20px;
+}
+.footer .social{
+  display: flex;
+  justify-content: space-between;
+  gap: 5vw;
+}
+.social img{
+  width: 40px;
+  cursor: pointer;
+}
+.footer button{
+  font-size: 18px;
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: 0;
+  background: var(--green);
+  color: #fff;
+  cursor: pointer;
+}
+.copyright{
+  display: flex;justify-content: space-between;
+  padding: 26px 5px;
+  color: rgba(0,0,0,0.7);
+}
+
+@media(max-width:1200px){
+  .footer{
+  padding: 20px;
+}
+}
+@media(max-width:1000px){
+.footer .social{
+  gap: 5vw;
+}
+.footer .contact{
+  /* width: 100%; */
+  display: flex;
+  gap: 5vw;
+  
+}
+}
+@media(max-width:800px){
+  .footer{
+  padding: 40px;
+  flex-direction: column;
+  gap: 50px;
+}
+.footer .social{
+  gap: 50px;
+}
+.footer .contact{
+  /* width: 100%; */
+  display: flex;
+  gap: 40px;
+  
+}
+.copyright{
+  display: flex;justify-content: space-between;
+  padding: 10px 0px;
+  gap: 8px;
+  color: rgba(0,0,0,0.7);
+  flex-direction: column;
+}
+.copyright p{
+  font-size: 14px;
+  text-align: center;
+
+}
+.copyright p:last-child{
+}
+}

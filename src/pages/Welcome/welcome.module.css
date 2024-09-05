@@ -1,0 +1,228 @@
+.container {
+  font-family: 'lemon-light';
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.container h1 {
+  font-size: 5rem;
+  padding: 20px 0;
+  padding-left: 40px;
+  font-weight: bold;
+  font-family: 'lemon-regular';
+}
+
+.content {
+  display: flex;
+  width: 85%;
+  margin: auto;
+  gap: 3%;
+  position: static;
+}
+
+.content div {
+  position: relative;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.content div img {
+  width: 100%;
+  transition: filter 0.3s ease;
+}
+
+.content div:hover img {
+  filter: brightness(0.7);
+  
+}
+
+.agroImg span {
+ font-size: 6vw;
+ letter-spacing: 1vw;
+ text-align: center;
+  font-family: 'lemon-regular';
+  color: #fff;
+
+
+}
+
+.industrialImg span {
+ font-size: 5.5vw;
+ font-weight: bolder;
+ letter-spacing: 0.5vw;
+ text-align: center;
+  font-family: 'lemon-regular';
+  color: #fff;
+
+
+}
+
+.container.agro {
+  background: var(--lightGreen);
+background: linear-gradient(180deg,var(--lightGreen) 0%, var(--darkGreen) 100%);
+  color: white; 
+
+
+}
+
+.container.industrial {
+  background: var(--lightGrey);
+background: linear-gradient(180deg,var(--lightGrey) 0%, var(--darkGrey) 100%);
+  color: white; /* Text color change */
+}
+
+.contentInfo h2,
+.contentInfo p,
+.container h1 {
+  transition: color 0.3s ease;
+}
+
+.container.agro h1,
+.container.agro .contentInfo h2,
+.container.agro .contentInfo p,
+.container.industrial h1,
+.container.industrial .contentInfo h2,
+.container.industrial .contentInfo p {
+  color: white; /* Text color change */
+}
+
+.contentInfo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 1.5%;
+  gap: 35px;
+  margin-bottom: 10%;
+  height: 20%;
+  padding: 0  10px;
+}
+
+.contentInfo h2 {
+  font-weight: normal;
+  font-size: 32px;
+}
+
+.contentInfo p {
+  font-family: 'lemon-regular';
+  font-size: 20px;
+  
+}
+
+.overlayText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+}
+.agroImg:hover .overlayText,
+.industrialImg:hover .overlayText {
+  color: white; /* Text color change on hover */
+}
+
+
+/* Agro-specific content styles */
+.agroContent {
+gap: 15px;
+margin-top: 1%;
+}
+
+/* Industrial-specific content styles */
+.industrialContent {
+gap: 15px;
+margin-top: 1%;
+
+}
+
+.agroContent p{
+  font-family: 'lemon-light';
+  font-size: 16px;
+  
+}
+.industrialContent p{
+  font-family: 'lemon-light';
+  font-size: 16px;
+}
+.agroContent h2, .industrialContent h2 {
+  font-weight: normal;
+  font-size: 28px;
+}
+
+@media(max-width:800px){
+  .container {
+  min-height:100vh;
+}
+
+.container h1 {
+  font-size: 4rem;
+}
+
+.content {
+  width: 96%;
+  gap: 2%;
+
+}
+}
+
+@media(max-width:600px){
+  .container h1 {
+  font-size: 3rem;
+  margin: 20px 0;
+  padding: 0;
+  text-align: center;
+}
+  .content {
+  width: 96%;
+  gap: 10px;
+  flex-direction: column;
+
+}
+
+
+.contentInfo h2 {
+  font-weight: normal;
+  font-size: 26px;
+}
+
+.contentInfo p {
+  font-family: 'lemon-regular';
+  font-size: 17px;
+}
+
+.agroImg span {
+ font-size: 15vw;
+ letter-spacing: 1vw;
+ text-align: center;
+  font-family: 'lemon-regular';
+  color: #fff;
+
+
+}
+
+.industrialImg span {
+ font-size: 13vw;
+ font-weight: bolder;
+ letter-spacing: 0.5vw;
+ text-align: center;
+  font-family: 'lemon-regular';
+  color: #fff;
+
+
+}
+.content div img {
+  width: 100%;
+  transition: filter 0.3s ease;
+}
+
+.content div img {
+  filter: brightness(0.7);
+  
+}
+}

@@ -1,0 +1,110 @@
+.container{
+  width: 90%;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+
+
+}
+.content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* min-height: 70vh; */
+ justify-content: center;
+gap: 30px; 
+margin: auto;
+}
+/* .content h1{
+  font-size: 8rem;
+  font-family: "Bodoni Moda", sans-serif;
+  font-family: 'BodoniModa';
+   letter-spacing: 0.7rem;
+} */
+
+.content img{
+  width: 60%;
+}
+.topText img{
+  width: 45%;
+}
+.topText img:first-child{
+  width: 35%;
+}
+.topText{
+  display: flex;
+  justify-content: space-between;
+}
+.middleText{
+  display: flex;justify-content: space-between;align-items: center;
+}
+
+.middleText h3{
+  font-size: 4vw;
+  color: var(--gold);
+  font-family: 'Bodoni-bk'; 
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+.bottomText{
+ display: flex;
+ align-items: end;
+ justify-content: end;
+}
+.dolomiteStone{
+  position: absolute;
+  top: 15%;
+  left: 35%;
+  transform: translateX(-50%,-50%);
+  z-index: 10;
+}
+.dolomiteStone img{
+  width: 70%;
+}
+
+@media(max-width:600px){
+  .container{
+    height: 60vh;
+    width: 92%;
+    /* background: #6c6c6c; */
+  }
+  .dolomiteStone{
+  position: absolute;
+  /* top: 10%; */
+  left: 30%;
+  transform: translateX(-50%,-50%);
+  z-index: 10;
+}
+.dolomiteStone img{
+  width: 42%;
+}
+.middleText h3{
+  font-size: 5vw;
+  text-align: center;
+  color: var(--gold);
+  font-family: 'Bodoni-bk'; 
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+.container h3{
+  display: flex;
+
+position: absolute;
+  font-size: 2rem;
+  color: var(--gold);
+  font-family: 'Bodoni-bk'; 
+  letter-spacing:3px;
+  cursor: pointer;
+  bottom: 10%;
+  right: 0%;
+}
+}
+
+@media(max-width:450px){
+  .container h3{
+  font-size: 1.5rem;
+  right: 0%;
+}
+}
