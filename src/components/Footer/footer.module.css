@@ -53,6 +53,12 @@
 }
 }
 @media(max-width:1000px){
+  .container{
+  width: 94%;
+  margin: auto;
+  font-family: "GFS Didot", system-ui;
+
+}
 .footer .social{
   gap: 5vw;
 }

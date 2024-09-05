@@ -101,6 +101,9 @@
   background-color: #333;
 }
 
+.footer{
+  margin-top: -100px;
+}
 
 @media(max-width:1200px){
   .submitButton {
@@ -118,8 +121,13 @@
   letter-spacing: 1rem;
   color: var(--gold);
   font-weight: 500;
-}}
-
+}
+}
+@media(max-width:1000px){
+  .footer{
+  margin-top: 80px;
+}
+}
 @media(max-width:900px){
 
 .left h1{
