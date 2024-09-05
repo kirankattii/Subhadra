@@ -82,14 +82,14 @@ position: absolute;
 }
 .quartzitStone{
   position: absolute;
-  left: 40%;
-  top: 50%;
+  left: 38%;
+  top: 44%;
   transform: translate(-94%,-10%);
   z-index: 2;
 }
 .quartzitStone img{
   z-index: 1;
-  width: 60%;
+  width: 80%;
 }
 
 

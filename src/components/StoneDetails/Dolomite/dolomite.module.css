@@ -156,3 +156,27 @@
 
 
 }
+
+.container {
+  position: relative;
+}
+
+/* Custom cursor */
+.customCursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 150px;
+  height: 150px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bodoni-bk";
+  font-size: 16px;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}

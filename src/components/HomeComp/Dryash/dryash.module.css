@@ -55,14 +55,14 @@ justify-content: space-around;
   right: 0%;
 }
 .dryash{
-  left: 55%;
+  left: 53%;
   top: 50%;
   transform: translate(-50%,-90%);
   z-index: 2;
 }
 .dryash img{
   z-index: 1;
-  width: 75%;
+  width: 86%;
 }
 
 @media(max-width:600px){
@@ -83,6 +83,16 @@ position: absolute;
   cursor: pointer;
   bottom: 15%;
   right: 0%;
+}
+.dryash img{
+  z-index: 1;
+  width: 75%;
+}
+.dryash{
+  left: 55%;
+  top: 50%;
+  transform: translate(-50%,-90%);
+  z-index: 2;
 }
 }
 

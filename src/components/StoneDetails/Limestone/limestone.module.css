@@ -73,11 +73,11 @@ width: 60%;
 }
 .stone{
   position: absolute;
-  top: -75%;
+  top: -85%;
   left: 30%;
 }
 .stone img{
-  width: 110%;
+  width: 120%;
 }
 
 @media(max-width:1250px){
