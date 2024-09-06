@@ -8,6 +8,10 @@ import Dolomite from "./components/StoneDetails/Dolomite/Dolomite"
 import Quartzite from "./components/StoneDetails/Quartzite/Quartzite"
 import Limestone from "./components/StoneDetails/Limestone/Limestone"
 import Dryash from "./components/StoneDetails/Dryash/Dryash"
+import AgroLayout from "./components/AgroLayout/Layout"
+import AgroHome from "./pages/AgroHome/AgroHome"
+import OnionDetails from "./components/AgroDetails/OnionDetails/OnionDetails"
+import RiceDetails from "./components/AgroDetails/RiceDetails/RiceDetails"
 
 const App = () => {
 	return (
@@ -40,6 +44,23 @@ const App = () => {
 					<Route
 						path="dry-fly-ash"
 						element={<Dryash />}
+					/>
+				</Route>
+				<Route
+					path="/agro"
+					element={<AgroLayout />}
+				>
+					<Route
+						path=""
+						element={<AgroHome />}
+					/>
+					<Route
+						path="onion"
+						element={<OnionDetails />}
+					/>
+					<Route
+						path="rice"
+						element={<RiceDetails />}
 					/>
 				</Route>
 				<Route

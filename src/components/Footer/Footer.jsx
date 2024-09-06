@@ -1,8 +1,18 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { assets } from "../../assets/images/assets"
 import styles from "./footer.module.css"
 
-const Footer = () => {
+const Footer = ({ switchColor, text, nav }) => {
+	const navigate = useNavigate()
+
+	const handleClick = () => {
+		window.scrollTo({
+			top: 0,
+			left: 0,
+			// behavior: "smooth", // Adds smooth scrolling
+		})
+		navigate(nav)
+	}
 	return (
 		<footer className={styles.container}>
 			<div className={styles.footer}>
@@ -11,7 +21,12 @@ const Footer = () => {
 					<p>Phone</p>
 					<p>Email</p>
 				</div>
-				<button>Switch To Agro</button>
+				<button
+					style={{ backgroundColor: switchColor }}
+					onClick={handleClick}
+				>
+					{text}
+				</button>
 				<div className={styles.social}>
 					<img
 						src={assets.instagram}

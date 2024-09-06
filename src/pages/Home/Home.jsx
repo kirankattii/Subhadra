@@ -18,8 +18,13 @@ const Home = () => {
 				<Quartzite />
 				<LimeStone />
 				<Dryash />
-				<Contact />
 			</div>
+			<Contact
+				switchColor={"#4BA040"}
+				contColor={"#B78F4A"}
+				text={"Switch To Agro"}
+				nav={"/agro"}
+			/>
 		</div>
 	)
 }

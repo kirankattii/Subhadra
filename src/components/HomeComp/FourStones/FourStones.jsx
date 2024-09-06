@@ -29,6 +29,7 @@ const FourStones = () => {
 				<div className={styles.stones}>
 					{homestones.map((img, i) => (
 						<motion.img
+							key={i}
 							initial={{ y: 0 }}
 							whileHover={{ y: -90 }}
 							transition={{

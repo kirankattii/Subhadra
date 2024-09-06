@@ -1,0 +1,113 @@
+.container{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  width: 90%;
+  margin: auto;
+
+}
+.agroImg{
+padding-top: 7%;
+   display: flex;align-items: start;
+  justify-content: start;
+} 
+.agroImg img{
+  width: 60%;
+
+ 
+}
+.content{
+  position: absolute;
+  color: var(--green);
+  bottom: 0;
+ left:50%;
+ transform: translate(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  width: 100%;
+  /* line-height: 0.8; */
+}
+.content h1:first-child{
+  font-size: 9vw;
+  margin-bottom: -66px;
+  letter-spacing: 0.5rem;
+  padding-right: 30px;
+}
+.content h1:last-child{
+  font-size: 17.5vw;
+  text-align: center;
+  letter-spacing: 1rem;
+}
+
+
+@media(max-width:1250px){
+  .agroImg{
+padding-top: 12%;
+   display: flex;align-items: start;
+  justify-content: start;
+} 
+.content h1:first-child{
+  font-size: 9vw;
+  margin-bottom: -40px;
+  letter-spacing: 0.8rem;
+}
+.agroImg img{
+  width: 70%; 
+}
+}
+
+@media(max-width:1000px){
+  .content h1:first-child{
+  font-size: 9vw;
+  margin-bottom: -40px;
+  letter-spacing: 0.8rem;
+}
+  .agroImg{
+padding-top: 12%;
+   display: flex;align-items: start;
+  justify-content: center;
+} 
+.agroImg img{
+  width: 90%; 
+}
+}
+
+@media(max-width:800px){
+  .container{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: auto;
+display: flex;flex-direction: column;
+gap: 20px;
+padding-top: 50px;
+background: #000;
+}
+.content{
+  padding: 0 20px;
+position: relative;
+}
+  .content h1:first-child{
+  font-size: 12vw;
+  margin-bottom: -15px;
+  letter-spacing: normal;
+  padding-right: 5px;
+
+}
+.content h1:last-child{
+  font-size: 19vw;
+  text-align: center;
+  letter-spacing: normal;
+}
+
+  .agroImg{
+padding-top: 12%;
+   display: flex;align-items: start;
+  justify-content: center;
+} 
+.agroImg img{
+  width: 90%; 
+}
+}

@@ -35,6 +35,7 @@ const Welcome = () => {
 					className={styles.agroImg}
 					onMouseEnter={() => handleMouseEnter("agro")}
 					onMouseLeave={handleMouseLeave}
+					onClick={() => navigate("/agro")}
 				>
 					<img
 						src={assets.agro_bg}

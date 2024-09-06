@@ -3,7 +3,7 @@ import styles from "./contact.module.css"
 import axios from "axios"
 import Footer from "../../Footer/Footer"
 
-const Contact = () => {
+const Contact = ({ contColor, switchColor, text, nav }) => {
 	const [countries, setCountries] = useState([])
 	const [selectedCountry, setSelectedCountry] = useState("")
 
@@ -37,7 +37,7 @@ const Contact = () => {
 							support your needs, contact us today. We're here to provide
 							exceptional service and premium solutions.
 						</p>
-						<h1>CONT.</h1>
+						<h1 style={{ color: contColor }}>CONT.</h1>
 						<p>
 							For inquiries, expert advice, or to learn more about how we can
 							support your needs, contact us today. We're here to provide
@@ -108,7 +108,11 @@ const Contact = () => {
 				</div>
 			</div>
 			<div className={styles.footer}>
-				<Footer />
+				<Footer
+					switchColor={switchColor}
+					text={text}
+					nav={nav}
+				/>
 			</div>
 		</>
 	)
