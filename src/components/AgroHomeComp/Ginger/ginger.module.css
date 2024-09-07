@@ -43,7 +43,7 @@ position: absolute;
   font-family: 'Bodoni-bk'; 
   letter-spacing:3px;
   cursor: pointer;
-
+z-index: 1;
   bottom: 5%;
   right: 0%;
 }

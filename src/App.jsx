@@ -12,6 +12,7 @@ import AgroLayout from "./components/AgroLayout/Layout"
 import AgroHome from "./pages/AgroHome/AgroHome"
 import OnionDetails from "./components/AgroDetails/OnionDetails/OnionDetails"
 import RiceDetails from "./components/AgroDetails/RiceDetails/RiceDetails"
+import GingerDetails from "./components/AgroDetails/GingerDetails/GingerDetails"
 
 const App = () => {
 	return (
@@ -61,6 +62,10 @@ const App = () => {
 					<Route
 						path="rice"
 						element={<RiceDetails />}
+					/>
+					<Route
+						path="ginger"
+						element={<GingerDetails />}
 					/>
 				</Route>
 				<Route

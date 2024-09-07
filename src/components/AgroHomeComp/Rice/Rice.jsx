@@ -158,10 +158,11 @@ import { useState, useEffect } from "react"
 import { assets, text } from "../../../assets/images/assets"
 import styles from "./rice.module.css"
 import { motion } from "framer-motion"
+import { useNavigate } from "react-router-dom"
 
 const Rice = () => {
 	const [isMobile, setIsMobile] = useState(false)
-
+	const navigate = useNavigate()
 	// Check for screen width below 600px
 	useEffect(() => {
 		const mediaQuery = window.matchMedia("(max-width: 600px)")
@@ -316,7 +317,7 @@ const Rice = () => {
 					</div>
 				</div>
 			</div>
-			<h2>KNOW MORE</h2>
+			<h2 onClick={() => navigate("/agro/rice")}>KNOW MORE</h2>
 		</div>
 	)
 }
