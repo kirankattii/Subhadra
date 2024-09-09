@@ -10,7 +10,7 @@ const Calcined = () => {
 			<div className={styles.content}>
 				<div className={styles.topText}>
 					<motion.img
-						initial={{ x: -100, opacity: 0.5 }}
+						initial={{ x: -150, opacity: 0.5 }}
 						whileInView={{ x: 0, opacity: 1 }}
 						transition={{
 							delay: 0.9,
@@ -25,7 +25,7 @@ const Calcined = () => {
 				</div>
 				<div className={styles.bottomText}>
 					<motion.img
-						initial={{ x: 100, opacity: 0.5 }}
+						initial={{ x: 150, opacity: 0.5 }}
 						whileInView={{ x: 0, opacity: 1 }}
 						transition={{
 							delay: 0.9,
