@@ -13,6 +13,8 @@ import AgroHome from "./pages/AgroHome/AgroHome"
 import OnionDetails from "./components/AgroDetails/OnionDetails/OnionDetails"
 import RiceDetails from "./components/AgroDetails/RiceDetails/RiceDetails"
 import GingerDetails from "./components/AgroDetails/GingerDetails/GingerDetails"
+import Manganese from "./components/StoneDetails/Manganese/Manganese"
+import Calcined from "./components/StoneDetails/Calcined/Calcined"
 
 const App = () => {
 	return (
@@ -45,6 +47,14 @@ const App = () => {
 					<Route
 						path="dry-fly-ash"
 						element={<Dryash />}
+					/>
+					<Route
+						path="manganese-ore"
+						element={<Manganese />}
+					/>
+					<Route
+						path="calcined-dolomite"
+						element={<Calcined />}
 					/>
 				</Route>
 				<Route

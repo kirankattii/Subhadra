@@ -10,7 +10,7 @@
   flex-direction: column;
   position: relative;
   height: 100vh;
-  width: 80%;
+  width: 90%;
   margin: auto;
   overflow: hidden;
 }
@@ -67,9 +67,9 @@ justify-content: space-around;
 
 @media(max-width:600px){
   .container{
-    height: 64vh;
+    height: 60vh;
     width: 96%;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
     
   }
   .container h2{

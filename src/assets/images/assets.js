@@ -6,13 +6,19 @@ import dolomite_stone from "./stones/dolomite stone.png"
 import dryfly_stone from "./stones/Dry Fly Ash.png"
 import lime_stone from "./stones/Lime stone.png"
 import quartzite_stone from "./stones/Quartzite stone.png"
+import calcined_Stone from "./stones/calcined_stone.png"
+import manganese_stone from "./stones/Manganese_stone.png"
 import quartziteRock from "./stones/QuartziteRock.png"
 import limestoneRock from "./stones/limestoneRock.png"
 import dolomiteRock from "./stones/dolomiteRock.png"
 import dryashRock from "./stones/flyashBlock.png"
+import manganese_rock from "./stones/manganeseRock.png"
+import calcined_rock from "./stones/calcined Rock.png"
 import facebook from "./facebook.png"
 import x from "./x.png"
 import instagram from "./instagram.png"
+import agro_Video from "./agro Video.mp4"
+import agro_Video2 from "./agroVideo2.mp4"
 
 export const assets = {
 	agro_bg,
@@ -23,10 +29,16 @@ export const assets = {
 	dryfly_stone,
 	lime_stone,
 	quartzite_stone,
+	calcined_Stone,
+	manganese_stone,
 	quartziteRock,
 	limestoneRock,
 	dolomiteRock,
 	dryashRock,
+	manganese_rock,
+	calcined_rock,
+	agro_Video,
+	agro_Video2,
 	facebook,
 	x,
 	instagram,
@@ -83,6 +95,10 @@ import gingerDark from "./text/GINGERDark.svg"
 import black_onion from "./text/BlackONIONS.svg"
 import blackGinger from "./text/BlackGINGER.svg"
 import blackRice from "./text/BlackRICE.svg"
+import manganese from "./text/Manganese.svg"
+import calcined from "./text/Calcined.svg"
+import ore from "./text/ore.svg"
+import manganese_small from "./text/Manganesesmall.svg"
 
 export const text = {
 	dry,
@@ -106,6 +122,10 @@ export const text = {
 	black_onion,
 	blackGinger,
 	blackRice,
+	manganese,
+	calcined,
+	ore,
+	manganese_small,
 }
 
 // agro

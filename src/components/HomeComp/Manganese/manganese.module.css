@@ -1,0 +1,123 @@
+.container{
+  /* width: 80%;
+  min-height: 100vh;
+  display: flex;justify-content: center;align-items: center;
+  flex-direction: column;
+  margin: auto;
+  position: relative; */
+  display: flex;align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  /* background: #696969; */
+}
+.dryash{
+  position: absolute;
+}
+.content{
+  display: flex;flex-direction: column;
+  width: 100%;
+  line-height: 1.2;
+  gap: 50px;
+  align-items: start;
+}
+/* .content h1{
+  font-size: 12rem;
+    text-align: center;
+  font-family: 'BodoniModa';
+   font-family: "Bodoni Moda", sans-serif;
+   z-index: 1;
+   letter-spacing: 1.5rem;
+} */
+ .content img{
+  width: 40%;
+ }
+.topText{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topText img{
+  width: 100%;
+ }
+.bottomText{
+  display: flex;
+  align-items: start;
+}
+.bottomText img{
+  width: 75%;
+}
+
+
+.container h2{
+position: absolute;
+  font-size: 3rem;
+  color: var(--gold);
+  font-family: 'Bodoni-bk'; 
+  letter-spacing:3px;
+  cursor: pointer;
+
+  bottom: 0%;
+  right: 0%;
+}
+.dryash{
+  left: 56%;
+  top: 75%;
+  transform: translate(-50%,-90%);
+  z-index: 2;
+}
+.dryash img{
+  z-index: 1;
+  width: 80%;
+}
+
+@media(max-width:600px){
+  .container{
+    height: 60vh;
+    width: 96%;
+  /* margin-bottom: 50px; */
+    
+  }
+  .container h2{
+  display: flex;
+
+position: absolute;
+  font-size: 2rem;
+  color: var(--gold);
+  font-family: 'Bodoni-bk'; 
+  letter-spacing:3px;
+  cursor: pointer;
+  bottom: 15%;
+  right: 0%;
+}
+.dryash img{
+  z-index: 1;
+  width: 80%;
+}
+.dryash{
+  left: 55%;
+  top: 53%;
+  transform: translate(-50%,-90%);
+  z-index: 2;
+}
+.bottomText{
+  margin-top: -5%;
+}
+.bottomText img{
+  width: 50%;
+}
+
+}
+
+@media(max-width:450px){
+  .container h2{
+  font-size: 1.5rem;
+  bottom: 17%;
+  right: 0%;
+}
+}
+

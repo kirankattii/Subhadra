@@ -1,5 +1,6 @@
 import { assets } from "../../../assets/images/assets"
 import styles from "./threeProducts.module.css"
+import { motion } from "framer-motion"
 
 const ThreeProducts = () => {
 	return (
@@ -18,15 +19,24 @@ const ThreeProducts = () => {
 			</div>
 			<div className={styles.products}>
 				<div className={styles.images}>
-					<img
+					<motion.img
+						initial={{ scale: 1 }}
+						whileHover={{ scale: 1.15 }}
+						transition={{ duration: 0.4 }}
 						src={assets.ginger1}
 						alt=""
 					/>
-					<img
+					<motion.img
+						initial={{ scale: 1 }}
+						whileHover={{ scale: 1.15 }}
+						transition={{ duration: 0.4 }}
 						src={assets.riceImg}
 						alt=""
 					/>
-					<img
+					<motion.img
+						initial={{ scale: 1 }}
+						whileHover={{ scale: 1.15 }}
+						transition={{ duration: 0.4 }}
 						src={assets.onion1}
 						alt=""
 					/>

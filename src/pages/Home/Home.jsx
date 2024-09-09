@@ -1,10 +1,12 @@
 import { assets } from "../../assets/images/assets"
+import Calcined from "../../components/HomeComp/Calcined/Calcined"
 import Contact from "../../components/HomeComp/Contact/Contact"
 import Dolomite from "../../components/HomeComp/Dolomite/Dolomite"
 import Dryash from "../../components/HomeComp/Dryash/Dryash"
 import FourStones from "../../components/HomeComp/FourStones/FourStones"
 import Landing from "../../components/HomeComp/Landing/Landing"
 import LimeStone from "../../components/HomeComp/Limestone/LimeStone"
+import Manganese from "../../components/HomeComp/Manganese/Manganese"
 import Quartzite from "../../components/HomeComp/Quartzite/Quartzite"
 import styles from "./home.module.css"
 
@@ -18,6 +20,8 @@ const Home = () => {
 				<Quartzite />
 				<LimeStone />
 				<Dryash />
+				<Manganese />
+				<Calcined />
 			</div>
 			<Contact
 				switchColor={"#4BA040"}
