@@ -43,9 +43,15 @@
 	color: var(--gold); /* Active link color */
 	font-weight: bold;
 }
+.medianav{
+  display: none;
+}
 
 @media(max-width:800px){
   .header{
     display: none;
+  }
+  .medianav{
+    display: block;
   }
 }
