@@ -11,7 +11,7 @@ const Landing = () => {
 				/>
 			</div>
 			<div className={styles.homeContent}>
-				<h1 className={styles.difining}>DIFINING</h1>
+				<h1 className={styles.difining}>DEFINING</h1>
 				<h1 className={styles.luxury}>LUXURY</h1>
 			</div>
 		</div>
