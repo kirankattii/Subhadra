@@ -1,5 +1,6 @@
 import { assets } from "../../assets/images/assets"
 import Calcined from "../../components/HomeComp/Calcined/Calcined"
+import Coke from "../../components/HomeComp/Coke/Coke"
 import Contact from "../../components/HomeComp/Contact/Contact"
 import Dolomite from "../../components/HomeComp/Dolomite/Dolomite"
 import Dryash from "../../components/HomeComp/Dryash/Dryash"
@@ -22,6 +23,7 @@ const Home = () => {
 				<Dryash />
 				<Manganese />
 				<Calcined />
+				<Coke />
 			</div>
 			<Contact
 				switchColor={"#4BA040"}

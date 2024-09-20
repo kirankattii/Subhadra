@@ -1,0 +1,25 @@
+.landing {
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  padding-top: 12.5vh;
+}
+
+.landing img {
+  width: 70%;
+  margin: auto;
+  background: #000;
+}
+
+.landing h2 {
+  font-size: 6.5vw;
+  font-family: 'Bodoni-bk';
+  letter-spacing: 4px;
+  color: var(--gold);
+  font-weight: 800px;
+  text-transform: uppercase;
+}

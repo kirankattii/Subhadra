@@ -14,11 +14,20 @@ import dolomiteRock from "./stones/dolomiteRock.png"
 import dryashRock from "./stones/flyashBlock.png"
 import manganese_rock from "./stones/manganeseRock.png"
 import calcined_rock from "./stones/calcined Rock.png"
+import coke_stone from './stones/COAL_Stone.png'
+import coke_rock from './stones/coal_mine.png'
 import facebook from "./facebook.png"
 import x from "./x.png"
 import instagram from "./instagram.png"
 import agro_Video from "./agro Video.mp4"
 import agro_Video2 from "./agroVideo2.mp4"
+
+//about
+import aboutIndustaialLanding from './aboutLandingindustrial.png'
+import aboutIndustrail2 from './aboutIndutarial2.png'
+import aboutIndustrail3 from './aboutIndustrial3.png'
+import groupOfStones from './GroupOfStones.png'
+
 
 export const assets = {
 	agro_bg,
@@ -37,6 +46,8 @@ export const assets = {
 	dryashRock,
 	manganese_rock,
 	calcined_rock,
+	coke_stone,
+	coke_rock,
 	agro_Video,
 	agro_Video2,
 	facebook,
@@ -65,6 +76,13 @@ export const assets = {
 	riceField,
 	onionField,
 	gingerField,
+
+
+	// about
+	aboutIndustaialLanding,
+	aboutIndustrail2,
+	aboutIndustrail3,
+	groupOfStones,
 }
 
 export const homestones = [
@@ -99,6 +117,8 @@ import manganese from "./text/Manganese.svg"
 import calcined from "./text/Calcined.svg"
 import ore from "./text/ore.svg"
 import manganese_small from "./text/Manganesesmall.svg"
+import metallurgical_text from './text/metallurgical_text.svg'
+import coke_text from './text/COKE_text.svg'
 
 export const text = {
 	dry,
@@ -126,6 +146,8 @@ export const text = {
 	calcined,
 	ore,
 	manganese_small,
+	metallurgical_text,
+	coke_text
 }
 
 // agro

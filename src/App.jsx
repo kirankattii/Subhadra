@@ -15,6 +15,9 @@ import RiceDetails from "./components/AgroDetails/RiceDetails/RiceDetails"
 import GingerDetails from "./components/AgroDetails/GingerDetails/GingerDetails"
 import Manganese from "./components/StoneDetails/Manganese/Manganese"
 import Calcined from "./components/StoneDetails/Calcined/Calcined"
+import Coke from "./components/StoneDetails/Coke/Coke"
+import AboutIndestrial from "./pages/About/AboutIndestrial/AboutIndestrial"
+import AboutAgro from "./pages/About/AboutAgro/AboutAgro"
 
 const App = () => {
 	return (
@@ -31,6 +34,10 @@ const App = () => {
 					<Route
 						path=""
 						element={<Home />}
+					/>
+					<Route
+						path="about-us"
+						element={<AboutIndestrial />}
 					/>
 					<Route
 						path="dolomite"
@@ -56,6 +63,10 @@ const App = () => {
 						path="calcined-dolomite"
 						element={<Calcined />}
 					/>
+					<Route
+						path="metallurgical-coke"
+						element={<Coke />}
+					/>
 				</Route>
 				<Route
 					path="/agro"
@@ -64,6 +75,10 @@ const App = () => {
 					<Route
 						path=""
 						element={<AgroHome />}
+					/>
+					<Route
+						path="about-us"
+						element={<AboutAgro />}
 					/>
 					<Route
 						path="onion"

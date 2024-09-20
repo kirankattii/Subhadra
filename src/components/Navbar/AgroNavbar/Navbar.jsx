@@ -41,19 +41,18 @@ const Navbar = () => {
 	return (
 		<>
 			<header
-				className={`${styles.header} ${scrolled ? styles.scrolled : ""} ${
-					scrollDirection === "down" ? styles.hide : ""
-				}`}
+				className={`${styles.header} ${scrolled ? styles.scrolled : ""} ${scrollDirection === "down" ? styles.hide : ""
+					}`}
 			>
 				<nav className={styles.nav}>
 					<NavLink
-						to="/indestrial"
+						to="/agro"
 						className={({ isActive }) => (isActive ? styles.active : undefined)}
 					>
 						HOME
 					</NavLink>
 					<NavLink
-						to="/about"
+						to="/agro/about-us"
 						className={({ isActive }) => (isActive ? styles.active : undefined)}
 					>
 						ABOUT

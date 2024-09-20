@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import styles from "./style.module.scss"
-import { assets } from "../../../../../assets/images/assets"
+import { assets } from "../../../../../../assets/images/assets"
+
 
 export default function index() {
 	return (
