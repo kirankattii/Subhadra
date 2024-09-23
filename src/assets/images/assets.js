@@ -27,6 +27,10 @@ import aboutIndustaialLanding from './aboutLandingindustrial.png'
 import aboutIndustrail2 from './aboutIndutarial2.png'
 import aboutIndustrail3 from './aboutIndustrial3.png'
 import groupOfStones from './GroupOfStones.png'
+import aboutAgroLanding from './aboutAgroLanding.png'
+import aboutAgro1 from './aboutAgro1.png'
+import aboutAgro2 from './aboutAgro2.png'
+import agroGroup from './agrogroup.png'
 
 
 export const assets = {
@@ -55,7 +59,6 @@ export const assets = {
 	instagram,
 
 	//agro
-
 	agrohomebg,
 	ginger1,
 	ginger2,
@@ -83,6 +86,10 @@ export const assets = {
 	aboutIndustrail2,
 	aboutIndustrail3,
 	groupOfStones,
+	aboutAgroLanding,
+	aboutAgro1,
+	aboutAgro2,
+	agroGroup
 }
 
 export const homestones = [

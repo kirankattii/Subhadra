@@ -1,25 +1,484 @@
+.container {
+  font-family: 'Bodoni-bk';
+  overflow: hidden;
+}
+
+.container p {
+  text-transform: capitalize;
+}
+
 .landing {
   width: 100%;
-  /* height: 100vh; */
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 
-  padding-top: 12.5vh;
+  padding-top: 13vh;
 }
 
 .landing img {
   width: 70%;
-  margin: auto;
+  /* margin: auto; */
   background: #000;
 }
 
-.landing h2 {
+.landing h1 {
   font-size: 6.5vw;
-  font-family: 'Bodoni-bk';
-  letter-spacing: 4px;
-  color: var(--gold);
+  font-family: 'Bodoni-bd-bt';
+  color: var(--lightGold);
   font-weight: 800px;
   text-transform: uppercase;
+}
+
+.legacy {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin: 0 50px;
+  margin-top: 6%;
+}
+
+.legacy img {
+  width: 60%;
+  min-width: 500px;
+  display: flex;
+}
+
+.legacy h2 {
+  font-size: 5.5vw;
+  letter-spacing: 4px;
+  font-weight: 400;
+  display: flex;
+  text-transform: uppercase;
+}
+
+.legacy p {
+  font-size: 1.6rem;
+}
+
+/* ============exclusive============== */
+
+.exclusive {
+  margin-top: 80px;
+}
+
+.exclusiveContents {
+  display: flex;
+  align-items: end;
+  width: 100%;
+  justify-content: center;
+  gap: 50px;
+}
+
+.exclusive img {
+  width: 40%;
+}
+
+.exclusiveContent {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.exclusive h2 {
+  text-transform: uppercase;
+  font-size: 4vw;
+  font-weight: 200;
+  margin-bottom: -20px;
+}
+
+.exclusiveContent h1 {
+  font-size: 10vw;
+  letter-spacing: 3px;
+  font-weight: 500;
+  /* margin-top: -20px; */
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.exclusive p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  width: 85%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+
+/* =============exclusive2=========== */
+
+.exclusive2 {
+  width: 92%;
+  margin: auto;
+  margin-top: 16%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.exclusive2 h2 {
+  font-size: 3.8vw;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.exclusive2 div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.exclusive h2 br {
+  display: block;
+}
+
+.exclusive2 div h1 {
+  font-size: 9vw;
+  letter-spacing: 3px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.exclusive2 div p {
+  font-size: 1.5rem;
+}
+
+/* ===========collections========= */
+.collections {
+  width: 92%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.collectionsTitle {
+  font-size: 4.8vw;
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.stones {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  margin-top: 50px;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 10px;
+}
+
+.stones img {
+  width: 60%;
+}
+
+.stones p {
+  font-size: 1.6rem;
+}
+
+.stonesCollections {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 1200px;
+  margin-top: 30px;
+}
+
+.stonesCollections p {
+  font-size: 1.6rem;
+}
+
+.stonesCollections span {
+  font-weight: 800;
+  font-size: 1.65rem;
+}
+
+
+/* ============Pioneering Technological Excellence========== */
+
+.technology {
+  width: 92%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.technologyTitle {
+  font-size: 5vw;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.technologyDescription {
+  font-size: 1.6rem;
+
+}
+
+.technology .luxury {
+  display: flex;
+  gap: 20px;
+  align-items: end;
+}
+
+.luxury h2 {
+  font-size: 5vw;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.luxury p {
+  font-size: 1.6rem;
+}
+
+.luxury img {
+  width: 45%;
+}
+
+.footer {
+  margin-top: 150px;
+}
+
+
+@media(max-width:1200px) {
+  .landing img {
+    width: 85%;
+    /* margin: auto; */
+    background: #000;
+  }
+}
+
+@media(max-width:1000px) {
+  .legacy p {
+    font-size: 1.3rem;
+  }
+
+  .exclusive {
+    width: 96%;
+    margin: auto;
+    margin-top: 80px;
+  }
+
+  .exclusiveContents {
+    gap: 30px;
+  }
+
+  .exclusive img {
+    width: 48%;
+  }
+
+
+  .exclusive h2 {
+    font-size: 4.5vw;
+    margin-left: 8px;
+  }
+
+  .exclusiveContent h1 {
+    font-size: 12vw;
+
+  }
+
+  .exclusive p {
+    font-size: 1.3rem;
+    width: 98%;
+    margin-top: 20px;
+  }
+
+  .exclusive2 {
+    width: 95%;
+    margin-top: 12%;
+  }
+
+  .exclusive2 h2 {
+    font-size: 4.5vw;
+    text-align: start;
+    letter-spacing: 1px;
+  }
+
+
+
+  .exclusive2 div h1 {
+    font-size: 8vw;
+    letter-spacing: 2px;
+  }
+
+  .exclusive2 div p {
+    font-size: 1.3rem;
+  }
+
+  .collections {
+    width: 94%;
+  }
+
+  .collectionsTitle {
+    font-size: 4.8vw;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  .stones {
+    margin-top: 40px;
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .stones img {
+    width: 100%;
+  }
+
+  .stones p {
+    font-size: 1.3rem;
+  }
+
+  .stonesCollections p {
+    font-size: 1.3rem;
+  }
+
+  .stonesCollections span {
+    font-weight: 800;
+    font-size: 1.33rem;
+  }
+
+
+
+
+  .technology {
+    width: 94%;
+    margin-top: 70px;
+  }
+
+  .technologyTitle {
+    font-size: 6vw;
+  }
+
+  .technologyDescription {
+    font-size: 1.3rem;
+  }
+
+  .technology .luxury {
+    margin-top: 20px;
+    flex-direction: column-reverse;
+    align-items: start;
+  }
+
+  .luxury h2 {
+    font-size: 6vw;
+  }
+
+  .luxury p {
+    font-size: 1.3rem;
+  }
+}
+
+@media(max-width:700px) {
+  .landing {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .legacy img,
+  .legacy h2 {
+    display: none;
+  }
+
+  .legacy p {
+    font-size: 1.3rem;
+  }
+
+  .legacy {
+    width: 95%;
+    margin: auto;
+    margin-top: 40px;
+  }
+
+  .exclusive2 {
+    display: none;
+  }
+
+  .exclusive h2 {
+
+    margin-bottom: 0px;
+  }
+
+}
+
+@media(max-width:600px) {
+  .exclusiveContents {
+    flex-direction: column;
+    align-items: start;
+    gap: 0;
+  }
+
+  .exclusive img {
+    width: 90%;
+    margin: auto;
+  }
+
+
+  .exclusive h2 {
+    font-size: 6vw;
+    margin-left: 8px;
+  }
+
+  .exclusive h2 br {
+    display: none;
+  }
+
+  .collectionsTitle {
+    font-size: 6vw;
+  }
+
+  .stones {
+    margin-top: 10px;
+
+  }
+
+  .landing img {
+    width: 96%;
+    /* margin: auto; */
+    background: #000;
+  }
+
+  .landing h1 {
+    margin: 0 10px;
+    font-size: 12.5vw;
+    text-align: center;
+  }
+
+  .technology {
+    width: 94%;
+    margin-top: 60px;
+  }
+
+  .technologyTitle {
+    font-size: 6vw;
+  }
+
+  .technologyDescription {
+    font-size: 1.3rem;
+    margin-top: 5px;
+  }
+
+  .luxury img {
+    width: 100%;
+  }
+
+  .luxury h2 {
+    font-size: 8vw;
+  }
+
+  .luxury p {
+    font-size: 1.3rem;
+    margin-top: 5px;
+  }
+
 }

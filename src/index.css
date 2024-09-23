@@ -3,17 +3,18 @@
 
 
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-a{
+a {
   color: inherit;
   text-decoration: none;
 }
-body{
+
+body {
   /* font-family: 'lemon-light';
   font-family: 'lemon-regular';
   font-family: 'Bodoni-bk'; */
@@ -35,11 +36,19 @@ body{
   font-weight: normal;
   src: local('Eina03-Light'), url('../src/assets/fonts/LEMONMILK-Regular.otf') format('woff');
 }
+
 @font-face {
   font-family: 'Bodoni-bk';
   font-style: normal;
   font-weight: normal;
   src: local('Eina03-Light'), url('../src/assets/fonts/bodonbk.ttf') format('woff');
+}
+
+@font-face {
+  font-family: 'Bodoni-bd-bt';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Eina03-Light'), url('../src/assets/fonts/BODONIB.TTF') format('woff');
 }
 
 @font-face {
@@ -53,28 +62,37 @@ body{
 
 :root {
   /* Primary Colors */
-  --gold: #B78F4A; 
-  --darkGold:#725d39;
+  --lightGold: #D4AC69;
+  --gold: #B78F4A;
+  --darkGold: #725d39;
   --lightGreen: #3b7e32;
   --darkGreen: #163013;
-  --lightGrey:#4f4f4f;
-  --darkGrey:#010101;
-  --green:#4BA040;
+  --lightGrey: #4f4f4f;
+  --darkGrey: #010101;
+  --green: #4BA040;
 
 
   /* Neutral Colors */
-  --neutral-color-light: #ecf0f1; /* Light Gray */
-  --neutral-color: #bdc3c7; /* Gray */
-  --neutral-color-dark: #7f8c8d; /* Dark Gray */
+  --neutral-color-light: #ecf0f1;
+  /* Light Gray */
+  --neutral-color: #bdc3c7;
+  /* Gray */
+  --neutral-color-dark: #7f8c8d;
+  /* Dark Gray */
 
   /* Accent Colors */
-  --accent-color: #f1c40f; /* Yellow */
+  --accent-color: #f1c40f;
+  /* Yellow */
   --accent-color-light: #f7dc6f;
   --accent-color-dark: #f39c12;
 
   /* Background and Text Colors */
-  --background-color: #ffffff; /* White */
-  --text-color: #333333; /* Dark Text */
-  --text-color-light: #666666; /* Light Text */
-  --text-color-inverse: #ffffff; /* Inverse Text */
+  --background-color: #ffffff;
+  /* White */
+  --text-color: #333333;
+  /* Dark Text */
+  --text-color-light: #666666;
+  /* Light Text */
+  --text-color-inverse: #ffffff;
+  /* Inverse Text */
 }
