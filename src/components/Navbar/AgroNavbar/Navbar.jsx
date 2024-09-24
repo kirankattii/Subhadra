@@ -47,31 +47,26 @@ const Navbar = () => {
 				<nav className={styles.nav}>
 					<NavLink
 						to="/agro"
-						className={({ isActive }) => (isActive ? styles.active : undefined)}
 					>
 						HOME
 					</NavLink>
 					<NavLink
 						to="/agro/about-us"
-						className={({ isActive }) => (isActive ? styles.active : undefined)}
 					>
 						ABOUT
 					</NavLink>
 					<NavLink
 						to="/process"
-						className={({ isActive }) => (isActive ? styles.active : undefined)}
 					>
 						PROCESS
 					</NavLink>
 					<NavLink
 						to="/blogs"
-						className={({ isActive }) => (isActive ? styles.active : undefined)}
 					>
 						BLOGS
 					</NavLink>
 					<NavLink
 						to="/contact-us"
-						className={({ isActive }) => (isActive ? styles.active : undefined)}
 					>
 						CONTACT US
 					</NavLink>

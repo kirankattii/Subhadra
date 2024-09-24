@@ -21,6 +21,7 @@ import x from "./x.png"
 import instagram from "./instagram.png"
 import agro_Video from "./agro Video.mp4"
 import agro_Video2 from "./agroVideo2.mp4"
+import gmap from './gmap.png'
 
 //about
 import aboutIndustaialLanding from './aboutLandingindustrial.png'
@@ -57,6 +58,7 @@ export const assets = {
 	facebook,
 	x,
 	instagram,
+	gmap,
 
 	//agro
 	agrohomebg,

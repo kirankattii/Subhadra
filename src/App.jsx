@@ -76,10 +76,10 @@ const App = () => {
 						path=""
 						element={<AgroHome />}
 					/>
-					{/* <Route
+					<Route
 						path="about-us"
 						element={<AboutAgro />}
-					/> */}
+					/>
 					<Route
 						path="onion"
 						element={<OnionDetails />}

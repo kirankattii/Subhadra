@@ -122,12 +122,32 @@ const AboutIndestrial = () => {
         </div>
       </div>
       <div className={styles.technology}>
-        <h2 className={styles.technologyTitle}>Pioneering Technological Excellence</h2>
-        <p className={styles.technologyDescription}>Setting new benchmarks in the industry, we are proud to introduce our Calcined Dolomite Plant, a symbol of innovation and elegance. With cutting-edge Italian technology, the plant will initially produce 300 metric tons per day, with a vision to expand to 600 metric tons per day within the year—ensuring our clients receive nothing but the best</p>
+        <motion.h2 initial={{ x: -60, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            opacity: { duration: 0.4 },
+            duration: 0.4,
+          }} className={styles.technologyTitle}>Pioneering Technological Excellence</motion.h2>
+        <motion.p initial={{ x: -60, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            opacity: { duration: 0.4 },
+            duration: 0.4,
+          }} className={styles.technologyDescription}>Setting new benchmarks in the industry, we are proud to introduce our Calcined Dolomite Plant, a symbol of innovation and elegance. With cutting-edge Italian technology, the plant will initially produce 300 metric tons per day, with a vision to expand to 600 metric tons per day within the year—ensuring our clients receive nothing but the best</motion.p>
         <div className={styles.luxury}>
           <div className={styles.luxuryContent}>
-            <h2>Luxury in service</h2>
-            <p>At Subhadra Commercial Pvt Ltd, luxury is not just in our products but in every aspect of our service. We craft bespoke solutions for our esteemed clientele, providing unparalleled attention to detail and ensuring that every interaction reflects our dedication to excellence.</p>
+            <motion.h2 initial={{ x: -60, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                opacity: { duration: 0.4 },
+                duration: 0.4,
+              }}>Luxury in service</motion.h2>
+            <motion.p initial={{ x: -60, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                opacity: { duration: 0.4 },
+                duration: 0.4,
+              }}>At Subhadra Commercial Pvt Ltd, luxury is not just in our products but in every aspect of our service. We craft bespoke solutions for our esteemed clientele, providing unparalleled attention to detail and ensuring that every interaction reflects our dedication to excellence.</motion.p>
           </div>
           <img src={assets.aboutIndustrail3} alt="" />
         </div>

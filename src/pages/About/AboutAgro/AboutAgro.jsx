@@ -120,21 +120,39 @@ const AgroIndestrial = () => {
         </div>
       </div>
       <div className={styles.technology}>
-        <h2 className={styles.technologyTitle}>Pioneering Agricultural Excellence</h2>
-        <p className={styles.technologyDescription}>Setting new benchmarks in the agro industry, we are proud to introduce our state-of-the-art processing facilities, a symbol of innovation and excellence. With advanced technology and sustainable practices, we ensure the highest standards of quality and efficiency, delivering premium agro products that meet the evolving needs of global markets—ensuring our clients receive nothing but the best.</p>
+        <motion.h2 initial={{ x: -60, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            opacity: { duration: 0.4 },
+            duration: 0.4,
+          }} className={styles.technologyTitle}>Pioneering Agricultural Excellence</motion.h2>
+        <motion.p initial={{ x: -60, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            opacity: { duration: 0.4 },
+            duration: 0.4,
+          }} className={styles.technologyDescription}>Setting new benchmarks in the agro industry, we are proud to introduce our state-of-the-art processing facilities, a symbol of innovation and excellence. With advanced technology and sustainable practices, we ensure the highest standards of quality and efficiency, delivering premium agro products that meet the evolving needs of global markets—ensuring our clients receive nothing but the best.</motion.p>
         <div className={styles.luxury}>
           <div className={styles.luxuryContent}>
-            <h2>Excellence in
-              Agricultural Service</h2>
-            <p>At Subhadra Commercial Pvt Ltd, excellence is not just in our agro products but in every aspect of our service. We tailor bespoke solutions for our esteemed clientele, offering meticulous attention to detail and ensuring that every interaction embodies our commitment to superior quality and service.</p>
+            <motion.h2 initial={{ x: -60, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                opacity: { duration: 0.4 },
+                duration: 0.4,
+              }}>Excellence in
+              Agricultural Service</motion.h2>
+            <motion.p initial={{ x: -60, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                opacity: { duration: 0.4 },
+                duration: 0.4,
+              }}>At Subhadra Commercial Pvt Ltd, excellence is not just in our agro products but in every aspect of our service. We tailor bespoke solutions for our esteemed clientele, offering meticulous attention to detail and ensuring that every interaction embodies our commitment to superior quality and service.</motion.p>
           </div>
           <img src={assets.aboutAgro1} alt="" />
         </div>
       </div>
       <div className={styles.footer}>
-        <Footer switchColor={"4BA040"}
-          text={"Switch To Agro"}
-          nav={'/agro'} />
+
         <Contact />
       </div>
     </div>
