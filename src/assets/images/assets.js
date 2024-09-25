@@ -33,6 +33,12 @@ import aboutAgro1 from './aboutAgro1.png'
 import aboutAgro2 from './aboutAgro2.png'
 import agroGroup from './agrogroup.png'
 
+import contactImg from './contactImg.png'
+
+import blogImg1 from './blogimg1.png'
+import blogImg2 from './blogimg2.png'
+import arrowBlogs from './leftArray.png'
+
 
 export const assets = {
 	agro_bg,
@@ -91,7 +97,13 @@ export const assets = {
 	aboutAgroLanding,
 	aboutAgro1,
 	aboutAgro2,
-	agroGroup
+	agroGroup,
+
+	contactImg,
+
+	blogImg1,
+	blogImg2,
+	arrowBlogs,
 }
 
 export const homestones = [
@@ -128,6 +140,12 @@ import ore from "./text/ore.svg"
 import manganese_small from "./text/Manganesesmall.svg"
 import metallurgical_text from './text/metallurgical_text.svg'
 import coke_text from './text/COKE_text.svg'
+import blog_text from './text/blogText.svg'
+import shubhadra_Text from './text/SubhadraText.svg'
+import the_subhadra_text from './text/the subhadraText.svg'
+import ofExcellence_text from './text/of ExcellenceText.svg'
+import step_into_text from './text/Step intoText.svg'
+import a_world_text from './text/a WorldText.svg'
 
 export const text = {
 	dry,
@@ -156,7 +174,13 @@ export const text = {
 	ore,
 	manganese_small,
 	metallurgical_text,
-	coke_text
+	coke_text,
+	blog_text,
+	shubhadra_Text,
+	the_subhadra_text,
+	ofExcellence_text,
+	step_into_text,
+	a_world_text,
 }
 
 // agro

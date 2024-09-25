@@ -18,6 +18,8 @@ import Calcined from "./components/StoneDetails/Calcined/Calcined"
 import Coke from "./components/StoneDetails/Coke/Coke"
 import AboutIndestrial from "./pages/About/AboutIndestrial/AboutIndestrial"
 import AboutAgro from "./pages/About/AboutAgro/AboutAgro"
+import Contact from "./pages/Contact/Contact"
+import Blog from "./pages/Blog/Blog"
 
 const App = () => {
 	return (
@@ -93,6 +95,8 @@ const App = () => {
 						element={<GingerDetails />}
 					/>
 				</Route>
+				<Route path="/contact-us" element={<Contact />} />
+				<Route path="/blogs" element={<Blog />} />
 				<Route
 					path="*"
 					element={<NotFoundPage />}

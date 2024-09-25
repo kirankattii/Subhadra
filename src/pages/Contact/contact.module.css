@@ -1,0 +1,248 @@
+.container {
+  font-family: 'Bodoni-bk';
+  padding-top: 80px;
+}
+
+.landing {
+  width: 94%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  height: 90vh;
+  align-items: start;
+  justify-content: center;
+  position: relative;
+}
+
+.landing .text1 {
+  width: 60%;
+  margin-left: 50px;
+}
+
+.landing .text2 {
+  width: 95%;
+}
+
+.landing .text3 {
+  width: 95%;
+  z-index: 1;
+}
+
+.landing h1 {
+  font-family: 'Bodoni Moda';
+  font-size: 10vw;
+}
+
+.landing .landingImg {
+  position: absolute;
+  right: 2%;
+  bottom: 5%;
+  width: 30%;
+}
+
+
+
+
+
+.contact {
+  position: relative;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+.contactImg2 {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contactContant {
+  z-index: 1;
+  width: 94%;
+  margin: auto;
+}
+
+.subhadraText {
+  display: flex;
+  justify-content: baseline;
+  align-items: end;
+}
+
+.subhadraText img {
+  width: 100%;
+}
+
+.contactContant p {
+  font-size: 2rem;
+  max-width: 700px;
+}
+
+.formContainer {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.contactForm input {
+  border: none;
+  background: none;
+  border-bottom: 1.5px solid black;
+  margin: 0 10px;
+  outline: 0;
+  font-size: 1.3rem;
+}
+
+.contactForm label {
+  font-size: 1.5rem;
+}
+
+.formRow1 input {
+  width: 170px;
+
+}
+
+.inlineLabel input {
+  width: 100%;
+}
+
+.contactForm {
+  width: 550px;
+}
+
+.formRow2 input {
+  width: 240px;
+}
+
+.formRow3 input {
+  width: 160px;
+}
+
+.formRow3 button {
+  padding: 3px 15px;
+  font-size: 1.3rem;
+  background: var(--lightGold);
+  border: 0;
+  color: #fff;
+  margin-top: 5px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.inputField::placeholder,
+.inlineTextArea::placeholder {
+  color: #c0a265;
+  font-style: italic;
+  font-size: 1.2rem;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+
+
+
+}
+
+.subhadraText {
+  margin-bottom: 50px;
+}
+
+.lightBgwhite {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.footer {
+  z-index: 5;
+}
+
+@media(max-width:1000px) {
+  .landing {
+    width: 94%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: 100%;
+    align-items: start;
+    justify-content: center;
+    position: relative;
+    margin-top: 50px;
+  }
+
+  .landing .text1 {
+    width: 70%;
+    margin-left: 30px;
+  }
+
+  .landing .text2 {
+    width: 100%;
+  }
+
+  .landing .text3 {
+    width: 100%;
+    z-index: 1;
+  }
+
+  .landing .landingImg {
+    position: absolute;
+    right: 0%;
+    bottom: -20%;
+    width: 50%;
+  }
+
+  .formContainer {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin-top: 40px;
+    margin-bottom: 80px;
+  }
+}
+
+@media(max-width:600px) {
+  .landing {
+    width: 94%;
+    gap: 20px;
+    height: 100%;
+    align-items: start;
+    justify-content: center;
+    position: relative;
+    margin-top: 50px;
+  }
+
+  .landing .text1 {
+    width: 70%;
+    margin-left: 10px;
+  }
+
+  .landing .text2 {
+    width: 100%;
+  }
+
+  .landing .text3 {
+    width: 100%;
+    z-index: 1;
+  }
+
+  .landing .landingImg {
+    position: absolute;
+    right: 0%;
+    bottom: -40%;
+    width: 50%;
+  }
+
+  .contactContant p {
+    font-size: 1.6rem;
+    max-width: 700px;
+  }
+}
