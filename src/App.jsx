@@ -1,5 +1,5 @@
-import React from "react"
-import { Route, Routes } from "react-router-dom"
+import React, { useEffect } from "react"
+import { Route, Routes, useLocation } from "react-router-dom"
 import IndustrialLayout from "./components/IndustrialLayout/layout"
 import Home from "./pages/Home/Home"
 import NotFoundPage from "./components/NotFoundPage"
@@ -22,6 +22,11 @@ import Contact from "./pages/Contact/Contact"
 import Blog from "./pages/Blog/Blog"
 
 const App = () => {
+	const location = useLocation()
+
+	useEffect(() => {
+		window.scrollTo(0, 0)
+	}, [location])
 	return (
 		<div>
 			<Routes>
@@ -69,6 +74,12 @@ const App = () => {
 						path="metallurgical-coke"
 						element={<Coke />}
 					/>
+					<Route path="contact-us"
+						element={<Contact switchColor={"#4BA040"}
+							contColor={"#B78F4A"}
+							text={"Switch To Agro"}
+							nav={"/agro"} />}
+					/>
 				</Route>
 				<Route
 					path="/agro"
@@ -93,6 +104,12 @@ const App = () => {
 					<Route
 						path="ginger"
 						element={<GingerDetails />}
+					/>
+					<Route path="contact-us"
+						element={<Contact contColor={"#4BA040"}
+							switchColor={"#B78F4A"}
+							text={"Switch To Industrial"}
+							nav={"/indestrial"} />}
 					/>
 				</Route>
 				<Route path="/contact-us" element={<Contact />} />

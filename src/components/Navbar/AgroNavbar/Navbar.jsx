@@ -66,7 +66,7 @@ const Navbar = () => {
 						BLOGS
 					</NavLink>
 					<NavLink
-						to="/contact-us"
+						to="/agro/contact-us"
 					>
 						CONTACT US
 					</NavLink>

@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import { assets, text } from '../../assets/images/assets'
+import { assets, texts } from '../../assets/images/assets'
 import Navbar from '../../components/Navbar/IndustrialNavbar/Navbar'
 import styles from './contact.module.css'
 import Footer from '../../components/Footer/Footer';
-const Contact = () => {
+const Contact = ({ switchColor, text, nav }) => {
   const [formData, setFormData] = useState({
     fullName: '',
     organization: '',
@@ -24,12 +24,12 @@ const Contact = () => {
   };
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className={styles.container}>
         <div className={styles.landing}>
-          <img src={text.step_into_text} alt="" className={styles.text1} />
-          <img src={text.a_world_text} alt="" className={styles.text2} />
-          <img src={text.ofExcellence_text} alt="" className={styles.text3} />
+          <img src={texts.step_into_text} alt="" className={styles.text1} />
+          <img src={texts.a_world_text} alt="" className={styles.text2} />
+          <img src={texts.ofExcellence_text} alt="" className={styles.text3} />
           <img src={assets.contactImg} alt="" className={styles.landingImg} />
         </div>
         <div className={styles.contact}>
@@ -51,19 +51,21 @@ const Contact = () => {
                     required
                   />
                   <label>Representing</label>
+                  <br />
                   <input
                     type="text"
                     name="organization"
                     placeholder="Organization Name"
                     value={formData.organization}
                     onChange={handleChange}
-                    className={styles.inputField}
+                    className={`${styles.inputField} ${styles.orgInput}`}
                     required
                   />
+                  <label className={styles.mediaLabel}>I Wish To Engage In A Discussion Regarding</label>
                 </div>
 
                 <div className={styles.inlineLabel}>
-                  <label>I Wish To Engage In A Discussion Regarding</label>
+                  <label className={styles.deskLabel}>I Wish To Engage In A Discussion Regarding</label>
                   <input
                     name="discussion"
                     placeholder="Your Message"
@@ -107,11 +109,11 @@ const Contact = () => {
               </form>
             </div>
             <div className={styles.subhadraText}>
-              <img src={text.shubhadra_Text} alt="" />
+              <img src={texts.shubhadra_Text} alt="" />
             </div>
           </div>
           <div className={styles.footer}>
-            <Footer switchColor={""} text={"Switch"} nav={'/'} />
+            <Footer switchColor={switchColor} text={text} nav={nav} />
           </div>
         </div>
       </div>

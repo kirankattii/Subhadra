@@ -175,6 +175,9 @@ export const text = {
 	manganese_small,
 	metallurgical_text,
 	coke_text,
+
+}
+export const texts = {
 	blog_text,
 	shubhadra_Text,
 	the_subhadra_text,

@@ -112,6 +112,7 @@
 
 .inlineLabel input {
   width: 100%;
+  margin-right: 5px;
 }
 
 .contactForm {
@@ -145,9 +146,6 @@
   width: 100%;
   margin: auto;
   text-align: center;
-
-
-
 }
 
 .subhadraText {
@@ -163,6 +161,18 @@
 
 .footer {
   z-index: 5;
+}
+
+.mediaLabel {
+  display: none;
+}
+
+.deskLabel {
+  display: block;
+}
+
+.formRow1 br {
+  display: none;
 }
 
 @media(max-width:1000px) {
@@ -244,5 +254,78 @@
   .contactContant p {
     font-size: 1.6rem;
     max-width: 700px;
+  }
+
+  .formRow1 br {
+    display: inline;
+  }
+
+
+  .contactForm input {
+    border: none;
+    background: none;
+    border-bottom: 1.5px solid black;
+    margin: 0 10px;
+    outline: 0;
+    font-size: 1.2rem;
+  }
+
+  .contactForm label {
+    font-size: 1.3rem;
+  }
+
+  .formRow1 input {
+    width: 160px;
+
+  }
+
+  .formRow1 .orgInput {
+    width: 250px;
+  }
+
+  .inlineLabel input {
+    width: 100%;
+    margin-left: -5px;
+  }
+
+  .contactForm {
+    width: 550px;
+  }
+
+  .formRow2 input {
+    width: 90%;
+  }
+
+  .formRow3 input {
+    width: 200px;
+  }
+
+  .mediaLabel {
+    display: inline;
+  }
+
+  .deskLabel {
+    display: none;
+  }
+
+  .inputField::placeholder,
+  .inlineTextArea::placeholder {
+    color: #c0a265;
+    font-style: italic;
+    font-size: 1.05rem;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .formRow3 button {
+    padding: 3px 15px;
+    font-size: 1.3rem;
+    background: var(--lightGold);
+    border: 0;
+    color: #fff;
+    margin-bottom: -15px;
+    margin-left: 40px;
+    cursor: pointer;
   }
 }

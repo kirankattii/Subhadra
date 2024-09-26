@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import { NavLink } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import styles from "./navbar.module.css"
 import { MediaNav2 } from "./mediaNav2"
 
@@ -45,36 +45,31 @@ const Navbar = () => {
 					}`}
 			>
 				<nav className={styles.nav}>
-					<NavLink
+					<Link
 						to="/indestrial"
-						className={({ isActive }) => (isActive ? styles.active : undefined)}
 					>
 						HOME
-					</NavLink>
-					<NavLink
+					</Link>
+					<Link
 						to="/indestrial/about-us"
-						className={({ isActive }) => (isActive ? styles.active : undefined)}
 					>
 						ABOUT
-					</NavLink>
-					<NavLink
+					</Link>
+					<Link
 						to="/process"
-						className={({ isActive }) => (isActive ? styles.active : undefined)}
 					>
 						PROCESS
-					</NavLink>
-					<NavLink
+					</Link>
+					<Link
 						to="/blogs"
-						className={({ isActive }) => (isActive ? styles.active : undefined)}
 					>
 						BLOGS
-					</NavLink>
-					<NavLink
-						to="/contact-us"
-						className={({ isActive }) => (isActive ? styles.active : undefined)}
+					</Link>
+					<Link
+						to="/agro/contact-us"
 					>
 						CONTACT US
-					</NavLink>
+					</Link>
 				</nav>
 			</header>
 			<div className={styles.medianav}>
