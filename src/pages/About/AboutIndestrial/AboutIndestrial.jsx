@@ -78,11 +78,11 @@ const AboutIndestrial = () => {
           }}>Our dedication to delivering nothing but the finest has earned us partnerships with industry leaders such as Shyam Steel, Bengal Energy, Neo Metaliks, and other esteemed names. These enduring relationships are built on mutual trust, unparalleled service, and the assurance of superior quality.</motion.p>
       </div>
       <div className={styles.exclusive2}>
-        {/* <Marquee >
+        <Marquee >
           <div className={styles.marquee}> {partners.map((partner, index) => (
             <img key={index} src={partner} alt="partners" />
           ))}</div>
-        </Marquee> */}
+        </Marquee>
         <motion.h2 initial={{ x: -80, y: -80, opacity: 0.5 }}
           whileInView={{ x: 0, y: 0, opacity: 1 }}
           transition={{
@@ -160,12 +160,12 @@ const AboutIndestrial = () => {
         </div>
       </div>
       <div className={styles.footer}>
-        <Contact
+        {/* <Contact
           switchColor={"#4BA040"}
           contColor={"#B78F4A"}
           text={"Switch To Agro"}
           nav={"/agro"}
-        />
+        /> */}
       </div>
     </div>
   )

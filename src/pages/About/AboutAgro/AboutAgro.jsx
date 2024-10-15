@@ -153,10 +153,10 @@ const AgroIndestrial = () => {
       </div>
       <div className={styles.footer}>
 
-        <Contact contColor={"#4BA040"}
+        {/* <Contact contColor={"#4BA040"}
           switchColor={"#B78F4A"}
           text={"Switch To Industrial"}
-          nav={"/indestrial"} />
+          nav={"/indestrial"} /> */}
       </div>
     </div>
   )

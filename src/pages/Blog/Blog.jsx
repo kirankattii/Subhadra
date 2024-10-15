@@ -29,6 +29,7 @@ const Blog = () => {
             <div className={styles.blackTransparent}></div>
           </div>
         </div>
+
       </div>
     </>
   )

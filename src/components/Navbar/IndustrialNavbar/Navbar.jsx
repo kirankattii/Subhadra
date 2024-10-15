@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react"
-import { Link, NavLink } from "react-router-dom"
+import { Link, NavLink, useLocation } from "react-router-dom"
 import styles from "./navbar.module.css"
 import { MediaNav2 } from "./mediaNav2"
 
 const Navbar = () => {
 	const [scrolled, setScrolled] = useState(false)
 	const [scrollDirection, setScrollDirection] = useState("up")
+	const location = useLocation()
 
 	useEffect(() => {
 		let lastScrollY = window.scrollY
@@ -47,26 +48,31 @@ const Navbar = () => {
 				<nav className={styles.nav}>
 					<Link
 						to="/indestrial"
+						style={{ color: location.pathname === "/indestrial" ? "#B78F4A" : "" }}
 					>
 						HOME
 					</Link>
 					<Link
 						to="/indestrial/about-us"
+						style={{ color: location.pathname === "/indestrial/about-us" ? "#B78F4A" : "" }}
 					>
 						ABOUT
 					</Link>
 					<Link
 						to="/process"
+						style={{ color: location.pathname === "/process" ? "#B78F4A" : "" }}
 					>
 						PROCESS
 					</Link>
 					<Link
-						to="/blogs"
+						to="/indestrial/blogs"
+						style={{ color: location.pathname === "/indestrial/blogs" ? "#B78F4A" : "" }}
 					>
 						BLOGS
 					</Link>
 					<Link
-						to="/agro/contact-us"
+						to="/indestrial/contact-us"
+						style={{ color: location.pathname === "/indestrial/contact-us" ? "#B78F4A" : "" }}
 					>
 						CONTACT US
 					</Link>

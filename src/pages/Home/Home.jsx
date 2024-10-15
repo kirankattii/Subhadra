@@ -25,12 +25,12 @@ const Home = () => {
 				<Calcined />
 				<Coke />
 			</div>
-			<Contact
+			{/* <Contact
 				switchColor={"#4BA040"}
 				contColor={"#B78F4A"}
 				text={"Switch To Agro"}
 				nav={"/agro"}
-			/>
+			/> */}
 		</div>
 	)
 }

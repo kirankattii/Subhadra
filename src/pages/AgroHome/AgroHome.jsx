@@ -14,12 +14,12 @@ const AgroHome = () => {
 			<Onions />
 			<Rice />
 			<Ginger />
-			<Contact
+			{/* <Contact
 				contColor={"#4BA040"}
 				switchColor={"#B78F4A"}
 				text={"Switch To Industrial"}
 				nav={"/indestrial"}
-			/>
+			/> */}
 		</div>
 	)
 }
