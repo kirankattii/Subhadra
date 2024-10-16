@@ -83,7 +83,9 @@ const App = () => {
 					<Route path="blogs" element={<Blog switchColor={"#4BA040"}
 						contColor={"#B78F4A"}
 						text={"Switch To Agro"}
-						nav={"/agro"} />} />
+						nav={"/agro"}
+
+					/>} />
 
 				</Route>
 				<Route
@@ -116,10 +118,16 @@ const App = () => {
 							text={"Switch To Industrial"}
 							nav={"/indestrial"} />}
 					/>
-					<Route path="blogs" element={<Blog contColor={"#4BA040"}
-						switchColor={"#B78F4A"}
-						text={"Switch To Industrial"}
-						nav={"/indestrial"} />} />
+					<Route path="blogs"
+						element={<Blog
+							contColor={"#4BA040"}
+							switchColor={"#B78F4A"}
+							text={"Switch To Industrial"}
+							nav={"/indestrial"}
+						/>
+						}
+
+					/>
 				</Route>
 				<Route path="/contact-us" element={<Contact />} />
 				{/* <Route path="/blogs" element={<Blog />} /> */}

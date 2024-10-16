@@ -1,3 +1,4 @@
+
 import { assets, text } from '../../assets/images/assets'
 import Navbar from '../../components/Navbar/IndustrialNavbar/Navbar'
 import styles from './blog.module.css'
@@ -5,7 +6,7 @@ import styles from './blog.module.css'
 const Blog = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className={styles.container}>
         <div className={styles.subhadraText}>
           <img src={text.the_subhadra_text} alt="" />
