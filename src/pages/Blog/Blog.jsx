@@ -13,7 +13,7 @@ const Blog = () => {
         </div>
         <div className={styles.blogs}>
           <div className={styles.blog1}>
-            <img src={assets.blogImg1} alt="" />
+            <img src={assets.blogImg11} alt="" />
             <h1>BLOG</h1>
             <h2>Insights & innovations</h2>
           </div>

@@ -27,10 +27,10 @@ const Contact = ({ switchColor, text, nav }) => {
       {/* <Navbar /> */}
       <div className={styles.container}>
         <div className={styles.landing}>
-          <img src={texts.step_into_text} alt="" className={styles.text1} />
-          <img src={texts.a_world_text} alt="" className={styles.text2} />
-          <img src={texts.ofExcellence_text} alt="" className={styles.text3} />
-          <img src={assets.contactImg} alt="" className={styles.landingImg} />
+          <h1 className={styles.text1}>STEP INTO</h1>
+          <h1 className={styles.text2}>A WORLD</h1>
+          <h1 className={styles.text3}>OF EXCELLENCE</h1>
+          {/* <img src={assets.contactImg} alt="" className={styles.landingImg} /> */}
         </div>
         <div className={styles.contact}>
           <img src={assets.contactImg} alt="" className={styles.contactImg2} />

@@ -1,5 +1,5 @@
-.header { 
-  width: 100%; 
+.header {
+  width: 100%;
   position: fixed;
   right: 0%;
   font-family: "GFS Didot", serif;
@@ -10,48 +10,58 @@
   padding-top: 36px;
   padding-right: 60px;
   z-index: 10;
- transition: background-color 0.3s ease, backdrop-filter 0.3s ease, transform 0.3s ease; 
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease, transform 0.3s ease;
 }
 
 .scrolled {
-  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
-  backdrop-filter: blur(5px); /* Glassy effect */
-  -webkit-backdrop-filter: blur(5px); /* For Safari support */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+  background-color: rgba(255, 255, 255, 0.1);
+  /* Semi-transparent white */
+  backdrop-filter: blur(5px);
+  /* Glassy effect */
+  -webkit-backdrop-filter: blur(5px);
+  /* For Safari support */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Optional: subtle shadow */
 }
 
 .hide {
-  transform: translateY(-100%); /* Move the navbar out of view when hidden */
+  transform: translateY(-100%);
+  /* Move the navbar out of view when hidden */
 }
 
 
 
 .nav {
-	display: flex;
-	gap: 80px;
+  display: flex;
+  gap: 80px;
   justify-content: end;
 }
 
 .nav a {
-	text-decoration: none;
-	color: black; /* Default link color */
-	cursor: pointer;
-  font-size: 17px;
+  text-decoration: none;
+  color: black;
+  /* Default link color */
+  cursor: pointer;
+  font-size: 17.5px;
+  font-weight: normal;
 }
 
 .nav a.active {
-	color: var(--gold); /* Active link color */
-	font-weight: bold;
+  color: var(--gold);
+  /* Active link color */
+  font-weight: bold;
 }
-.medianav{
+
+.medianav {
   display: none;
 }
 
-@media(max-width:800px){
-  .header{
+@media(max-width:800px) {
+  .header {
     display: none;
   }
-  .medianav{
+
+  .medianav {
     display: block;
   }
 }

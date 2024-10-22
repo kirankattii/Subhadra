@@ -55,7 +55,14 @@ body {
   font-family: 'BodoniModa';
   /* font-style: normal;
   font-weight: normal; */
-  src: local('Eina03-Light'), url('../src/assets/fonts/BodoniModa-VariableFont_opsz\,wght.ttf') format('woff');
+  src: local('Eina03-Light'), url('../src/assets/fonts/BodoniModa-VariableFont.ttf') format('woff');
+}
+
+@font-face {
+  font-family: 'BodoniMT';
+  /* font-style: normal;
+  font-weight: normal; */
+  src: local('Eina03-Light'), url('../src/assets/fonts/bodoni-mt.ttf') format('woff');
 }
 
 

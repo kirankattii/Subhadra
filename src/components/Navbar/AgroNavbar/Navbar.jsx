@@ -56,13 +56,13 @@ const Navbar = () => {
 						to="/agro/about-us"
 						style={{ color: location.pathname === "/agro/about-us" ? "#4BA040" : "black" }}
 					>
-						ABOUT
+						ABOUT US
 					</NavLink>
 					<NavLink
 						to="/process"
 						style={{ color: location.pathname === "/process" ? "#4BA040" : "black" }}
 					>
-						PROCESS
+						PRODUCTS
 					</NavLink>
 					<NavLink
 						to="/agro/blogs"

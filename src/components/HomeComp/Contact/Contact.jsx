@@ -199,9 +199,11 @@ const Contact = ({ contColor, switchColor, text, nav }) => {
 										X
 									</button>
 									<iframe
+										loading="false"
 										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61526.32158201618!2d74.95646584899545!3d15.463165819812867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb8cd62d889aba7%3A0x5a4f2144717bcf70!2sDharwad%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1727153389526!5m2!1sen!2sin"
-										style={{ border: 0 }}
-										allowFullScreen=""
+										style={{ border: 0, opacity: 1, transition: 'none' }}
+
+										// allowFullScreen=""
 										referrerPolicy="no-referrer-when-downgrade"
 									></iframe>
 								</motion.div>

@@ -36,6 +36,7 @@ import agroGroup from './agrogroup.png'
 import contactImg from './contactImg.png'
 
 import blogImg1 from './blogimg1.png'
+import blogImg11 from './blogimg11.png'
 import blogImg2 from './blogimg2.png'
 import arrowBlogs from './leftArray.png'
 
@@ -102,6 +103,7 @@ export const assets = {
 	contactImg,
 
 	blogImg1,
+	blogImg11,
 	blogImg2,
 	arrowBlogs,
 }

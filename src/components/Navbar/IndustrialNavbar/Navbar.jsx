@@ -45,6 +45,7 @@ const Navbar = () => {
 				className={`${styles.header} ${scrolled ? styles.scrolled : ""} ${scrollDirection === "down" ? styles.hide : ""
 					}`}
 			>
+
 				<nav className={styles.nav}>
 					<Link
 						to="/indestrial"
@@ -56,13 +57,13 @@ const Navbar = () => {
 						to="/indestrial/about-us"
 						style={{ color: location.pathname === "/indestrial/about-us" ? "#B78F4A" : "" }}
 					>
-						ABOUT
+						ABOUT US
 					</Link>
 					<Link
 						to="/process"
 						style={{ color: location.pathname === "/process" ? "#B78F4A" : "" }}
 					>
-						PROCESS
+						PRODUCTS
 					</Link>
 					<Link
 						to="/indestrial/blogs"
