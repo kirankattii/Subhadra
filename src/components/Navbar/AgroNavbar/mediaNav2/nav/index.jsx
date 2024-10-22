@@ -11,11 +11,11 @@ import Footer from "./Footer"
 const navbar = [
 	{
 		title: "Home",
-		href: "/",
+		href: "/agro",
 	},
 	{
 		title: "About Us",
-		href: "/about-us",
+		href: "/agro/about-us",
 	},
 	{
 		title: "Process",
@@ -23,11 +23,11 @@ const navbar = [
 	},
 	{
 		title: "Blogs",
-		href: "/blogs",
+		href: "/agro/blogs",
 	},
 	{
 		title: "Contact Us",
-		href: "/contact-us",
+		href: "/agro/contact-us",
 	},
 ]
 
@@ -65,6 +65,9 @@ const Nav = () => {
 								selectedIndicator === data.href ? styles.activeLink : ""
 							}
 							onClick={() => setSelectedIndicator(data.href)}
+							style={{
+								color: location.pathname === data.href ? '#4BA040' : '#fff'
+							}}
 						>
 							{data.title}
 						</Link>

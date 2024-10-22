@@ -8,26 +8,27 @@ import Curve from "./Curve"
 import Footer from "./Footer"
 // import { navbar } from "../../../../assets/assets"
 
+
 const navbar = [
 	{
 		title: "Home",
-		href: "/",
+		href: "/indestrial",
 	},
 	{
 		title: "About Us",
-		href: "/about-us",
+		href: "/indestrial/about-us",
 	},
 	{
 		title: "Process",
-		href: "/process",
+		href: "/indestrial/process",
 	},
 	{
 		title: "Blogs",
-		href: "/blogs",
+		href: "/indestrial/blogs",
 	},
 	{
 		title: "Contact Us",
-		href: "/contact-us",
+		href: "/indestrial/contact-us",
 	},
 ]
 
@@ -64,6 +65,9 @@ const Nav = () => {
 							className={
 								selectedIndicator === data.href ? styles.activeLink : ""
 							}
+							style={{
+								color: location.pathname === data.href ? "#B78F4A" : "",
+							}}
 							onClick={() => setSelectedIndicator(data.href)}
 						>
 							{data.title}

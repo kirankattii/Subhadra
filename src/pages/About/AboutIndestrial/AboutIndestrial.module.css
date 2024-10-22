@@ -111,11 +111,15 @@
 
 
 /* =============exclusive2=========== */
+.marquee {
+
+  margin-top: 12%;
+  margin-bottom: 2%;
+}
 
 .exclusive2 {
   width: 92%;
   margin: auto;
-  margin-top: 16%;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -303,7 +307,11 @@
 
   .exclusive2 {
     width: 95%;
-    margin-top: 12%;
+    /* margin-top: 12%; */
+  }
+
+  .marquee {
+    margin-top: 5%;
   }
 
   .exclusive2 h2 {
@@ -421,6 +429,15 @@
     margin-bottom: 0px;
   }
 
+  .collections {
+
+    margin-top: 40px;
+  }
+
+  .marquee img {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 @media(max-width:600px) {
@@ -493,4 +510,16 @@
     margin-top: 5px;
   }
 
+  .collections {
+    margin-top: 0px;
+  }
+
+  .marquee {
+    margin-top: 4%;
+  }
+
+  .marquee img {
+    width: 70px;
+    height: 70px;
+  }
 }
