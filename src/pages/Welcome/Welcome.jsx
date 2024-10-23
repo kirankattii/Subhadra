@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom"
 const Welcome = () => {
 	const [hovered, setHovered] = useState(null)
 	const [isMobile, setIsMobile] = useState(window.innerWidth < 500)
+	const [backgroundClass, setBackgroundClass] = useState("")
 	const navigate = useNavigate()
 
 	useEffect(() => {
@@ -19,6 +20,17 @@ const Welcome = () => {
 		return () => window.removeEventListener("resize", handleResize)
 	}, [])
 
+	useEffect(() => {
+		if (hovered) {
+			const timer = setTimeout(() => {
+				setBackgroundClass(styles[hovered])
+			}, 50) // 50ms delay
+			return () => clearTimeout(timer)
+		} else {
+			setBackgroundClass("")
+		}
+	}, [hovered])
+
 	const handleMouseEnter = (type) => {
 		setHovered(type)
 	}
@@ -29,7 +41,14 @@ const Welcome = () => {
 
 	return (
 		<div className={`${styles.container} ${hovered ? styles[hovered] : ""}`}>
-			<h1>WELCOME TO</h1>
+			<div className={styles.welcomeHeader}>
+				<h1>WELCOME TO</h1>
+				{
+					hovered ?
+						<img src={assets.whiteLimited} alt="" /> :
+						<img src={assets.blackLimited} alt="" />
+				}
+			</div>
 			<div className={styles.content}>
 				<div
 					className={styles.agroImg}
@@ -70,27 +89,26 @@ const Welcome = () => {
 					scale: hovered ? 1 : 0.8,
 				}}
 				transition={{ duration: 0.3 }}
-				className={`${styles.contentInfo} ${
-					hovered === "agro"
-						? styles.agroContent
-						: hovered === "industrial"
+				className={`${styles.contentInfo} ${hovered === "agro"
+					? styles.agroContent
+					: hovered === "industrial"
 						? styles.industrialContent
 						: ""
-				}`}
+					}`}
 			>
 				<h2>
 					{hovered === "agro"
 						? "Growing Excellence, Harvesting Trust"
 						: hovered === "industrial"
-						? "Engineering Excellence, Empowering Industries"
-						: "CHOOSE ONE TO EXPLORE"}
+							? "Engineering Excellence, Empowering Industries"
+							: "CHOOSE ONE TO EXPLORE"}
 				</h2>
 				<p>
 					{hovered === "agro"
 						? "At Subhadra Commercial Pvt Ltd, we specialize in delivering high-quality agro products that nurture growth and sustainability. Our commitment to excellence ensures that every product meets rigorous standards, providing our clients with reliable and superior solutions for their agricultural needs. With a focus on innovation and integrity, we cultivate long-lasting relationships rooted in trust and mutual success."
 						: hovered === "industrial"
-						? "At Subhadra Commercial Pvt Ltd, we specialize in supplying high-quality industrial products that are engineered to meet the most stringent standards. Our commitment to excellence ensures that our solutions enhance efficiency, reliability, and performance across a wide range of industries. We are dedicated to empowering businesses with the tools they need to thrive, delivering products that stand the test of time and exceed expectations."
-						: "Where Quality Meets Reliability in Industrial and Agro Excellence, Delivered with a Global Touch"}
+							? "At Subhadra Commercial Pvt Ltd, we specialize in supplying high-quality industrial products that are engineered to meet the most stringent standards. Our commitment to excellence ensures that our solutions enhance efficiency, reliability, and performance across a wide range of industries. We are dedicated to empowering businesses with the tools they need to thrive, delivering products that stand the test of time and exceed expectations."
+							: "Where Quality Meets Reliability in Industrial and Agro Excellence, Delivered with a Global Touch"}
 				</p>
 			</motion.div>
 		</div>

@@ -41,6 +41,13 @@ import blogImg2 from './blogimg2.png'
 import arrowBlogs from './leftArray.png'
 
 
+// logos
+import logowhite from './logowhite.png'
+import logoblack from './logoBlack.png'
+import whiteLimited from './white limited.png'
+import blackLimited from './blacklimited.png'
+
+
 export const assets = {
 	agro_bg,
 	industrial_bg,
@@ -106,6 +113,13 @@ export const assets = {
 	blogImg11,
 	blogImg2,
 	arrowBlogs,
+
+
+	//logos
+	logowhite,
+	logoblack,
+	whiteLimited,
+	blackLimited,
 }
 
 export const homestones = [

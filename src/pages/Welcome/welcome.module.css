@@ -4,14 +4,28 @@
   flex-direction: column;
   width: 100%;
   min-height: 100vh;
-  transition: background-color 0.3s ease;
+  background: white;
+  transition: background-color 0.5s ease, background 0.5s ease;
   position: relative;
 }
 
+.welcomeHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+
+.welcomeHeader img {
+  width: 45%;
+  /* max-width: 600px; */
+}
+
 .container h1 {
-  font-size: 5rem;
+  font-size: 6.2vw;
   padding: 20px 0;
-  padding-left: 40px;
+  /* padding-left: 80px; */
   font-weight: bold;
   font-family: 'lemon-regular';
 }
@@ -37,13 +51,13 @@
 
 .content div:hover img {
   filter: brightness(0.7);
-  
+
 }
 
 .agroImg span {
- font-size: 6vw;
- letter-spacing: 1vw;
- text-align: center;
+  font-size: 6vw;
+  letter-spacing: 1vw;
+  text-align: center;
   font-family: 'lemon-regular';
   color: #fff;
 
@@ -51,10 +65,10 @@
 }
 
 .industrialImg span {
- font-size: 5.5vw;
- font-weight: bolder;
- letter-spacing: 0.5vw;
- text-align: center;
+  font-size: 5.5vw;
+  font-weight: bolder;
+  letter-spacing: 0.5vw;
+  text-align: center;
   font-family: 'lemon-regular';
   color: #fff;
 
@@ -63,16 +77,17 @@
 
 .container.agro {
   background: var(--lightGreen);
-background: linear-gradient(180deg,var(--lightGreen) 0%, var(--darkGreen) 100%);
-  color: white; 
-
-
+  background: linear-gradient(180deg, var(--lightGreen) 0%, var(--darkGreen) 100%);
+  color: white;
+  transition: background 0.5s ease;
 }
 
 .container.industrial {
   background: var(--lightGrey);
-background: linear-gradient(180deg,var(--lightGrey) 0%, var(--darkGrey) 100%);
-  color: white; /* Text color change */
+  background: linear-gradient(180deg, var(--lightGrey) 0%, var(--darkGrey) 100%);
+  color: white;
+  transition: background 0.5s ease;
+
 }
 
 .contentInfo h2,
@@ -87,7 +102,8 @@ background: linear-gradient(180deg,var(--lightGrey) 0%, var(--darkGrey) 100%);
 .container.industrial h1,
 .container.industrial .contentInfo h2,
 .container.industrial .contentInfo p {
-  color: white; /* Text color change */
+  color: white;
+  /* Text color change */
 }
 
 .contentInfo {
@@ -98,7 +114,7 @@ background: linear-gradient(180deg,var(--lightGrey) 0%, var(--darkGrey) 100%);
   gap: 35px;
   margin-bottom: 10%;
   height: 20%;
-  padding: 0  10px;
+  padding: 0 10px;
 }
 
 .contentInfo h2 {
@@ -109,7 +125,7 @@ background: linear-gradient(180deg,var(--lightGrey) 0%, var(--darkGrey) 100%);
 .contentInfo p {
   font-family: 'lemon-regular';
   font-size: 20px;
-  
+
 }
 
 .overlayText {
@@ -122,107 +138,132 @@ background: linear-gradient(180deg,var(--lightGrey) 0%, var(--darkGrey) 100%);
   color: black;
   text-transform: uppercase;
 }
+
 .agroImg:hover .overlayText,
 .industrialImg:hover .overlayText {
-  color: white; /* Text color change on hover */
+  color: white;
+  /* Text color change on hover */
 }
 
 
 /* Agro-specific content styles */
 .agroContent {
-gap: 15px;
-margin-top: 1%;
+  gap: 15px;
+  margin-top: 1%;
 }
 
 /* Industrial-specific content styles */
 .industrialContent {
-gap: 15px;
-margin-top: 1%;
+  gap: 15px;
+  margin-top: 1%;
 
 }
 
-.agroContent p{
+.agroContent p {
   font-family: 'lemon-light';
   font-size: 16px;
-  
+
 }
-.industrialContent p{
+
+.industrialContent p {
   font-family: 'lemon-light';
   font-size: 16px;
 }
-.agroContent h2, .industrialContent h2 {
+
+.agroContent h2,
+.industrialContent h2 {
   font-weight: normal;
   font-size: 28px;
 }
 
-@media(max-width:800px){
+@media(max-width:800px) {
   .container {
-  min-height:100vh;
-}
+    min-height: 100vh;
+  }
 
-.container h1 {
-  font-size: 4rem;
-}
-
-.content {
-  width: 96%;
-  gap: 2%;
-
-}
-}
-
-@media(max-width:600px){
   .container h1 {
-  font-size: 3rem;
-  margin: 20px 0;
-  padding: 0;
-  text-align: center;
-}
+    /* font-size: 4rem; */
+  }
+
   .content {
-  width: 96%;
-  gap: 10px;
-  flex-direction: column;
+    width: 96%;
+    gap: 2%;
 
+  }
 }
 
+@media(max-width:600px) {
+  .welcomeHeader {
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 0;
+    justify-content: center;
+    line-height: 1;
+  }
 
-.contentInfo h2 {
-  font-weight: normal;
-  font-size: 26px;
-}
+  .welcomeHeader img {
+    width: 94%;
+  }
 
-.contentInfo p {
-  font-family: 'lemon-regular';
-  font-size: 17px;
-}
+  .container h1 {
+    font-size: 3rem;
+    margin: 20px 0;
+    padding: 0;
+    text-align: center;
+  }
 
-.agroImg span {
- font-size: 15vw;
- letter-spacing: 1vw;
- text-align: center;
-  font-family: 'lemon-regular';
-  color: #fff;
+  .content {
+    width: 96%;
+    gap: 10px;
+    flex-direction: column;
 
-
-}
-
-.industrialImg span {
- font-size: 13vw;
- font-weight: bolder;
- letter-spacing: 0.5vw;
- text-align: center;
-  font-family: 'lemon-regular';
-  color: #fff;
+  }
 
 
-}
-.content div img {
-  width: 100%;
-  transition: filter 0.3s ease;
-}
+  .contentInfo h2 {
+    font-weight: normal;
+    font-size: 26px;
+  }
 
-.content div img {
-  filter: brightness(0.7);
-  
-}
+  .contentInfo p {
+    font-family: 'lemon-regular';
+    font-size: 17px;
+  }
+
+  .agroImg span {
+    font-size: 15vw;
+    letter-spacing: 1vw;
+    text-align: center;
+    font-family: 'lemon-regular';
+    color: #fff;
+
+
+  }
+
+  .industrialImg span {
+    font-size: 13vw;
+    font-weight: bolder;
+    letter-spacing: 0.5vw;
+    text-align: center;
+    font-family: 'lemon-regular';
+    color: #fff;
+
+
+  }
+
+  .content div {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .content div img {
+    width: 97%;
+    transition: filter 0.3s ease;
+  }
+
+  .content div img {
+    filter: brightness(0.7);
+
+  }
 }
