@@ -45,8 +45,8 @@ const Welcome = () => {
 				<h1>WELCOME TO</h1>
 				{
 					hovered ?
-						<img src={assets.whiteLimited} alt="" /> :
-						<img src={assets.blackLimited} alt="" />
+						<img src={assets.subhadraWhiteLtd} alt="" /> :
+						<img src={assets.subhadraBlackLtd} alt="" />
 				}
 			</div>
 			<div className={styles.content}>
