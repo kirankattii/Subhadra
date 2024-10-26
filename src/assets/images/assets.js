@@ -46,6 +46,7 @@ import logowhite from './logowhite.png'
 import logoblack from './logoBlack.png'
 import whiteLimited from './white limited.png'
 import blackLimited from './blacklimited.png'
+import subhadraLogo from './subhadraLogo.png'
 
 
 export const assets = {
@@ -120,6 +121,7 @@ export const assets = {
 	logoblack,
 	whiteLimited,
 	blackLimited,
+	subhadraLogo
 }
 
 export const homestones = [

@@ -48,10 +48,11 @@ const Navbar = () => {
 					}`}
 			>
 				<div className={styles.logo}>
-					{location.pathname.includes('/contact-us') ?
+					{/* {location.pathname.includes('/contact-us') ?
 						<img src={assets.logowhite} alt="" /> :
 						<img src={assets.logoblack} alt="" />
-					}
+					} */}
+					<img src={assets.subhadraLogo} alt="" />
 				</div>
 
 				<nav className={styles.nav}>
@@ -88,6 +89,7 @@ const Navbar = () => {
 				</nav>
 			</header>
 			<div className={styles.medianav}>
+				<img src={assets.subhadraLogo} alt="" />
 				<MediaNav2 />
 			</div>
 		</>

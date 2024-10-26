@@ -69,7 +69,14 @@
     display: none;
   }
 
+  .medianav img {
+    width: 80px;
+    padding: 14px;
+    position: absolute;
+    z-index: 10;
+  }
+
   .medianav {
-    display: block;
+    display: flex;
   }
 }
