@@ -9,7 +9,6 @@ const Footer = ({ switchColor, text, nav }) => {
 		window.scrollTo({
 			top: 0,
 			left: 0,
-			// behavior: "smooth", // Adds smooth scrolling
 		})
 		navigate(nav)
 	}
@@ -17,9 +16,24 @@ const Footer = ({ switchColor, text, nav }) => {
 		<footer className={styles.container}>
 			<div className={styles.footer}>
 				<div className={styles.contact}>
-					<p>Address</p>
-					<p>Phone</p>
-					<p>Email</p>
+					<div className={`${styles.hoverContent} ${styles.address}`}>
+						<p>Address</p>
+						<div className={styles.infoBox}>
+							<span>G.T. Road, Old Court More, Durgapur-713203, Dist. : Burdwan, West Bengal, India.</span>
+						</div>
+					</div>
+					<div className={`${styles.hoverContent} ${styles.phone}`}>
+						<p>Phone</p>
+						<div className={styles.infoBox}>
+							<span>Phone : 7797821111 <br /> Telefax : 0343 2585058</span>
+						</div>
+					</div>
+					<div className={`${styles.hoverContent} ${styles.email}`}>
+						<p>Email</p>
+						<div className={styles.infoBox}>
+							<span>scpl.dgp@gmail.com</span>
+						</div>
+					</div>
 				</div>
 				<button
 					style={{ backgroundColor: switchColor }}
