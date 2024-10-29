@@ -45,8 +45,8 @@ const Welcome = () => {
 				<h1>WELCOME TO</h1>
 				{
 					hovered === "agro" ?
-						<img src={assets.agroPVT} alt="" /> : hovered === "industrial" ?
-							<img src={assets.industrialPVT} alt="" /> :
+						<img src={assets.agroPVT2} alt="" /> : hovered === "industrial" ?
+							<img src={assets.industrialPVT2} alt="" /> :
 							<img src={assets.commercialPVT} alt="" />
 				}
 			</div>
@@ -108,9 +108,9 @@ const Welcome = () => {
 				</h2>
 				<p>
 					{hovered === "agro"
-						? "Subhadra Commercial Pvt. Ltd. offers premium agricultural products, including onions, ginger, and rice. With a commitment to quality and a customer-focused approach, the company serves global markets by delivering reliable and consistently high-grade commodities"
+						? "Subhadra Commercial Pvt. Ltd. offers premium agricultural products, including onions, ginger, rice, wheat flour, maize, and red chilli and soya bean. With a commitment to quality and a customer-focused approach, the company serves global markets by delivering reliable and consistently high-grade commodities"
 						: hovered === "industrial"
-							? "With decades of experience, Subhadra Commercial Pvt. Ltd. stands out for its top-tier supply of essential industrial minerals like dolomite, quartzite, and limestone, along with high-grade coking coal. Their meticulous quality standards and vast knowledge enable them to meet the stringent demands of industries, ensuring efficient and reliable performance in every delivery​"
+							? "Subhadra Commercial Pvt. Ltd. supplies a diverse range of industrial essentials, including premium limestone, dolomite, high-carbon coke, thermal and coking coal, pure quartz and quartzite, and fine-quality dry fly ash. With a strong focus on reliability and quality, these materials are meticulously sourced to support key sectors like steel, construction, and glass manufacturing, ensuring optimal performance and consistent results for industrial applications."
 							: "Where Quality Meets Reliability in Industrial and Agro Excellence, Delivered with a Global Touch"}
 				</p>
 			</motion.div>

@@ -52,6 +52,8 @@ import subhadraBlackLtd from './subhadrablackPvt.png'
 import commercialPVT from './commercial pvt ld.png'
 import agroPVT from './agro pvt ld.png'
 import industrialPVT from './industrial pvt ld.png'
+import industrialPVT2 from './industrial pvt2.png'
+import agroPVT2 from './agro pvt2.png'
 
 
 export const assets = {
@@ -132,6 +134,8 @@ export const assets = {
 	commercialPVT,
 	agroPVT,
 	industrialPVT,
+	industrialPVT2,
+	agroPVT2,
 }
 
 export const homestones = [
