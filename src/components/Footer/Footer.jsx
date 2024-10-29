@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom"
 import { assets } from "../../assets/images/assets"
 import styles from "./footer.module.css"
+import { motion } from "framer-motion"
 
 const Footer = ({ switchColor, text, nav }) => {
 	const navigate = useNavigate()
@@ -17,21 +18,29 @@ const Footer = ({ switchColor, text, nav }) => {
 			<div className={styles.footer}>
 				<div className={styles.contact}>
 					<div className={`${styles.hoverContent} ${styles.address}`}>
-						<p>Address</p>
+						<motion.p initial={{ scale: 1 }}
+							whileTap={{ scale: 0.9 }} >Address</motion.p>
 						<div className={styles.infoBox}>
 							<span>G.T. Road, Old Court More, Durgapur-713203, Dist. : Burdwan, West Bengal, India.</span>
 						</div>
 					</div>
 					<div className={`${styles.hoverContent} ${styles.phone}`}>
-						<p>Phone</p>
+						<motion.p initial={{ scale: 1 }}
+							whileTap={{ scale: 0.9 }} >Phone</motion.p>
 						<div className={styles.infoBox}>
-							<span>Phone : 7797821111 <br /> Telefax : 0343 2585058</span>
+							<span>
+								Phone: <a href="tel:7797821111">7797821111</a> <br />
+								Telefax: <a href="tel:03432585058">0343 2585058</a>
+							</span>
 						</div>
 					</div>
 					<div className={`${styles.hoverContent} ${styles.email}`}>
-						<p>Email</p>
+						<motion.p initial={{ scale: 1 }}
+							whileTap={{ scale: 0.9 }} >Email</motion.p>
 						<div className={styles.infoBox}>
-							<span>scpl.dgp@gmail.com</span>
+							<span>
+								<a href="mailto:scpl.dgp@gmail.com">scpl.dgp@gmail.com</a>
+							</span>
 						</div>
 					</div>
 				</div>

@@ -44,9 +44,10 @@ const Welcome = () => {
 			<div className={styles.welcomeHeader}>
 				<h1>WELCOME TO</h1>
 				{
-					hovered ?
-						<img src={assets.subhadraWhiteLtd} alt="" /> :
-						<img src={assets.subhadraBlackLtd} alt="" />
+					hovered === "agro" ?
+						<img src={assets.agroPVT} alt="" /> : hovered === "industrial" ?
+							<img src={assets.industrialPVT} alt="" /> :
+							<img src={assets.commercialPVT} alt="" />
 				}
 			</div>
 			<div className={styles.content}>
@@ -61,9 +62,11 @@ const Welcome = () => {
 						alt="Agro"
 					/>
 
-					{(hovered === "agro" || isMobile) && (
-						<span className={styles.overlayText}>AGRO</span>
-					)}
+					<span
+						className={`${styles.overlayText} ${hovered === "agro" ? styles.scaleText : ""}`}
+					>
+						AGRO
+					</span>
 				</div>
 				<div
 					className={styles.industrialImg}
@@ -76,9 +79,9 @@ const Welcome = () => {
 						alt="Industrial"
 					/>
 
-					{(hovered === "industrial" || isMobile) && (
-						<span className={styles.overlayText}>INDUSTRIAL</span>
-					)}
+					{/* {(hovered === "industrial" || isMobile) && ( */}
+					<span className={styles.overlayText}>INDUSTRIAL</span>
+					{/* )} */}
 				</div>
 			</div>
 
@@ -98,16 +101,16 @@ const Welcome = () => {
 			>
 				<h2>
 					{hovered === "agro"
-						? "Growing Excellence, Harvesting Trust"
+						? "Nurturing Quality, Harvesting Trust"
 						: hovered === "industrial"
-							? "Engineering Excellence, Empowering Industries"
+							? "Building Foundations, Strengthening Futures"
 							: "CHOOSE ONE TO EXPLORE"}
 				</h2>
 				<p>
 					{hovered === "agro"
-						? "At Subhadra Commercial Pvt Ltd, we specialize in delivering high-quality agro products that nurture growth and sustainability. Our commitment to excellence ensures that every product meets rigorous standards, providing our clients with reliable and superior solutions for their agricultural needs. With a focus on innovation and integrity, we cultivate long-lasting relationships rooted in trust and mutual success."
+						? "Subhadra Commercial Pvt. Ltd. offers premium agricultural products, including onions, ginger, and rice. With a commitment to quality and a customer-focused approach, the company serves global markets by delivering reliable and consistently high-grade commodities"
 						: hovered === "industrial"
-							? "At Subhadra Commercial Pvt Ltd, we specialize in supplying high-quality industrial products that are engineered to meet the most stringent standards. Our commitment to excellence ensures that our solutions enhance efficiency, reliability, and performance across a wide range of industries. We are dedicated to empowering businesses with the tools they need to thrive, delivering products that stand the test of time and exceed expectations."
+							? "With decades of experience, Subhadra Commercial Pvt. Ltd. stands out for its top-tier supply of essential industrial minerals like dolomite, quartzite, and limestone, along with high-grade coking coal. Their meticulous quality standards and vast knowledge enable them to meet the stringent demands of industries, ensuring efficient and reliable performance in every delivery​"
 							: "Where Quality Meets Reliability in Industrial and Agro Excellence, Delivered with a Global Touch"}
 				</p>
 			</motion.div>

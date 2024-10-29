@@ -49,10 +49,11 @@
   transition: filter 0.3s ease;
 }
 
-.content div:hover img {
+.content div img {
   filter: brightness(0.7);
 
 }
+
 
 .agroImg span {
   font-size: 6vw;
@@ -64,8 +65,9 @@
 
 }
 
+
 .industrialImg span {
-  font-size: 5.5vw;
+  font-size: 5.3vw;
   font-weight: bolder;
   letter-spacing: 0.5vw;
   text-align: center;
@@ -133,26 +135,16 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 24px;
   font-weight: bold;
   color: black;
-  text-transform: uppercase;
-}
-
-.agroImg:hover .overlayText,
-.industrialImg:hover .overlayText {
-  color: white;
-  /* Text color change on hover */
 }
 
 
-/* Agro-specific content styles */
 .agroContent {
   gap: 15px;
   margin-top: 1%;
 }
 
-/* Industrial-specific content styles */
 .industrialContent {
   gap: 15px;
   margin-top: 1%;
@@ -161,13 +153,16 @@
 
 .agroContent p {
   font-family: 'lemon-light';
-  font-size: 16px;
-
+  font-size: 14.5px;
+  line-height: 1.5;
+  letter-spacing: 1.2px;
 }
 
 .industrialContent p {
   font-family: 'lemon-light';
-  font-size: 16px;
+  font-size: 14.5px;
+  line-height: 1.5;
+  letter-spacing: 1.2px;
 }
 
 .agroContent h2,
@@ -175,6 +170,18 @@
   font-weight: normal;
   font-size: 28px;
 }
+
+.overlayText {
+  transition: transform 0.3s ease;
+  opacity: 0.85;
+}
+
+.scaleText {
+  transform: scale(1.1);
+  opacity: 1;
+  /* Adjust scale as needed */
+}
+
 
 @media(max-width:800px) {
   .container {
@@ -266,4 +273,21 @@
     filter: brightness(0.7);
 
   }
+}
+
+
+.overlayText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease;
+  transform-origin: center;
+  /* Ensures scaling happens from the center */
+}
+
+.agroImg:hover .overlayText,
+.industrialImg:hover .overlayText {
+  transform: translate(-50%, -50%) scale(1.1);
+  /* Scales without shifting */
 }

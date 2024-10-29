@@ -49,6 +49,9 @@ import blackLimited from './blacklimited.png'
 import subhadraLogo from './subhadraLogo.png'
 import subhadraWhiteLtd from './subhadrawhitePvt.png'
 import subhadraBlackLtd from './subhadrablackPvt.png'
+import commercialPVT from './commercial pvt ld.png'
+import agroPVT from './agro pvt ld.png'
+import industrialPVT from './industrial pvt ld.png'
 
 
 export const assets = {
@@ -125,7 +128,10 @@ export const assets = {
 	blackLimited,
 	subhadraLogo,
 	subhadraWhiteLtd,
-	subhadraBlackLtd
+	subhadraBlackLtd,
+	commercialPVT,
+	agroPVT,
+	industrialPVT,
 }
 
 export const homestones = [

@@ -154,8 +154,8 @@
 .hoverContent div {
   display: none;
   position: absolute;
-  top: -100px;
-  left: 20px;
+  top: -94px;
+  left: 13px;
   background-color: white;
   color: black;
   padding: 15px;
@@ -182,4 +182,46 @@
   width: 200px;
   top: -70px;
   left: 5px;
+}
+
+@media(max-width:600px) {
+  .infoBox span {
+    font-size: 14px;
+  }
+
+  .hoverContent div {
+    padding: 10px;
+    width: 330px;
+  }
+
+  .address div {
+    left: -35px;
+    top: -85px;
+  }
+
+  .address div::after {
+    left: 55px;
+  }
+
+  .phone div {
+    padding: 10px;
+    left: -70px;
+    width: 180px;
+    top: -84px;
+  }
+
+  .phone div:after {
+    left: 80px;
+
+  }
+
+  .email div {
+    left: -100px;
+    width: 160px;
+    top: -60px;
+  }
+
+  .email div::after {
+    left: 120px;
+  }
 }
