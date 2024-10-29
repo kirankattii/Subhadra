@@ -186,6 +186,51 @@
 }
 
 
+.container {
+  font-family: 'lemon-light';
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: transparent;
+  /* Initial background color */
+  transition: background-color 1s ease;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  transition: width 0.8s ease, height 0.8s ease;
+}
+
+.container.agro::before {
+  background: linear-gradient(180deg, var(--lightGreen), var(--darkGreen));
+  width: 200%;
+  height: 200%;
+}
+
+.container.industrial::before {
+  background: linear-gradient(180deg, var(--lightGrey), var(--darkGrey));
+  width: 200%;
+  height: 200%;
+}
+
+/* Ensures content is on top of overlay */
+.container>* {
+  position: relative;
+  z-index: 1;
+}
+
 @media(max-width:800px) {
   .container {
     min-height: 100vh;
