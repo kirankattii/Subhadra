@@ -7,30 +7,22 @@ import Footer from '../../../components/Footer/Footer';
 import Contact from '../../../components/HomeComp/Contact/Contact';
 import Marquee from 'react-fast-marquee';
 import { partners } from '../../../assets/images/partners/partners';
-// import Lenis from '@studio-freight/lenis'
 
 
 const AboutIndestrial = () => {
 
   const ref = useRef(null);
 
-  // Scroll value and the bounding box of the element to trigger animations
   const { scrollY } = useScroll();
 
-  // Calculate the start and end points for the animation
   const [start, end] = [0, 60 * window.innerHeight / 100];
 
-  // Transform values based on scroll position
   const y = useTransform(scrollY, [start, end], [0, -100]);
   const scale = useTransform(scrollY, [start, end], [1, 0.8]);
 
 
   return (
     <div ref={ref} className={styles.container}>
-      {/* <div className={styles.landing}>
-        <img src={assets.aboutIndustaialLanding} alt="" />
-        <h1>A Legacy of Distinction</h1>
-      </div> */}
       <motion.div
         className={styles.landing}
         style={{ y, scale }}
@@ -113,8 +105,11 @@ const AboutIndestrial = () => {
           }} className={styles.collectionsTitle}>An Exquisite Collection of Minerals</motion.h2>
         <div className={styles.stones}>
           <p>At Subhadra Commercial Pvt Ltd, we take pride in offering an exclusive selection of minerals tailored for the most discerning clients:</p>
-          <motion.img initial={{ x: -200, y: 200, opacity: 0.5 }}
-            whileInView={{ x: 0, y: 0, opacity: 1 }}
+          <motion.img
+            // initial={{ x: -200, y: 200, opacity: 0.5 }}
+            //   whileInView={{ x: 0, y: 0, opacity: 1 }}
+            initial={{ scale: 0.5, opacity: 0.5 }}
+            whileInView={{ scale: 1, opacity: 1 }}
             transition={{
               ease: "linear",
               duration: 0.5,
@@ -158,14 +153,6 @@ const AboutIndestrial = () => {
           </div>
           <img src={assets.aboutIndustrail3} alt="" />
         </div>
-      </div>
-      <div className={styles.footer}>
-        {/* <Contact
-          switchColor={"#4BA040"}
-          contColor={"#B78F4A"}
-          text={"Switch To Agro"}
-          nav={"/agro"}
-        /> */}
       </div>
     </div>
   )

@@ -116,7 +116,7 @@
   gap: 35px;
   margin-bottom: 10%;
   height: 20%;
-  padding: 0 10px;
+  padding: 0 30px;
 }
 
 .contentInfo h2 {
@@ -153,7 +153,7 @@
 
 .agroContent p {
   font-family: 'lemon-light';
-  font-size: 14.5px;
+  font-size: 13.5px;
   line-height: 1.5;
   letter-spacing: 1.2px;
   text-transform: none !important;
@@ -161,7 +161,7 @@
 
 .industrialContent p {
   font-family: 'lemon-light';
-  font-size: 14.5px;
+  font-size: 13.5px;
   line-height: 1.5;
   letter-spacing: 1.2px;
   text-transform: capitalize !important;
@@ -338,4 +338,8 @@
 .industrialImg:hover .overlayText {
   transform: translate(-50%, -50%) scale(1.1);
   /* Scales without shifting */
+}
+
+.contentInfo p {
+  text-transform: lowercase !important;
 }

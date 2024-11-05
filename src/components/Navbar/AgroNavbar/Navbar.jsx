@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import { NavLink, useLocation } from "react-router-dom"
+import { Link, NavLink, useLocation } from "react-router-dom"
 import styles from "./navbar.module.css"
 import { MediaNav2 } from "./mediaNav2"
 import { assets } from "../../../assets/images/assets"
@@ -51,7 +51,7 @@ const Navbar = () => {
 						<img src={assets.logowhite} alt="" /> :
 						<img src={assets.logoblack} alt="" />
 					} */}
-					<img src={assets.subhadraLogo} alt="" />
+					<Link to="/">	<img src={assets.subhadraLogo} alt="" /></Link>
 				</div>
 				<nav className={styles.nav}>
 					<NavLink

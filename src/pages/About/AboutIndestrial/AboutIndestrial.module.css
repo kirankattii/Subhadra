@@ -1,6 +1,7 @@
 .container {
   font-family: 'Bodoni-bk';
   overflow: hidden;
+  margin-bottom: 100px;
 }
 
 .container p {
@@ -259,6 +260,9 @@
 .footer {
   margin-top: 150px;
 }
+
+
+
 
 
 @media(max-width:1200px) {
