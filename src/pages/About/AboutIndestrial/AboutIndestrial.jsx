@@ -3,20 +3,43 @@ import { useEffect, useRef, useState } from "react"
 import { useTransform, useScroll, motion } from "framer-motion"
 import { assets } from "../../../assets/images/assets"
 import styles from "./AboutIndestrial.module.css"
-import Footer from "../../../components/Footer/Footer"
-import Contact from "../../../components/HomeComp/Contact/Contact"
+
 import Marquee from "react-fast-marquee"
 import { partners } from "../../../assets/images/partners/partners"
+import ExclusiceClient from "../../../components/ExclusiveClient/ExclusiveClient"
 
 const AboutIndestrial = () => {
   const ref = useRef(null)
 
   const { scrollY } = useScroll()
 
-  const [start, end] = [0, (60 * window.innerHeight) / 100]
+  const [start, end] = [0, (50 * window.innerHeight) / 100]
 
   const y = useTransform(scrollY, [start, end], [0, -100])
   const scale = useTransform(scrollY, [start, end], [1, 0.8])
+  const opacity = useTransform(scrollY, [start, end], [1, 0])  // Add opacity transform
+
+
+  const exclusiveOpacity = useTransform(
+    scrollY,
+    [start, (50 * window.innerHeight) / 100],
+    [1, 0]
+  )
+  const exclusiveOpacity2 = useTransform(
+    scrollY,
+    [(70 * window.innerHeight) / 100, (90 * window.innerHeight) / 100], // Changed trigger points to later in the scroll
+    [1, 0]
+  )
+
+  const ref2 = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref2,
+    offset: ["start start", "end start"]
+  });
+
+  const opacity2 = useTransform(scrollYProgress, [0, 0.4], [1, 0]);
+
+
 
   return (
     <div
@@ -25,7 +48,7 @@ const AboutIndestrial = () => {
     >
       <motion.div
         className={styles.landing}
-        style={{ y, scale }}
+        style={{ y, scale, opacity }}
       >
         <motion.img
           src={assets.aboutIndustaialLanding}
@@ -62,7 +85,11 @@ const AboutIndestrial = () => {
           material supply across India.
         </p>
       </div>
-      <div className={styles.exclusive}>
+      <motion.div
+        ref={ref2}
+        style={{ opacity: opacity2 }}
+
+        className={styles.exclusive}>
         <div className={styles.exclusiveContents}>
           <div className={styles.exclusiveContent}>
             <h2>
@@ -94,7 +121,8 @@ const AboutIndestrial = () => {
           Bengal Energy, Shyam Steel, Shakambari Group, Neo Metaliks, Amalgam
           Steel, Narsingh Ispat, Atibir Units, and Shyam Sel.
         </motion.p>
-      </div>
+      </motion.div>
+      {/* <ExclusiceClient /> */}
       <Marquee>
         <div className={styles.marquee}>
           {" "}
@@ -163,8 +191,7 @@ const AboutIndestrial = () => {
             industrial sectors:
           </p>
           <motion.img
-            // initial={{ x: -200, y: 200, opacity: 0.5 }}
-            //   whileInView={{ x: 0, y: 0, opacity: 1 }}
+
             initial={{ scale: 0.5, opacity: 0.5 }}
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{

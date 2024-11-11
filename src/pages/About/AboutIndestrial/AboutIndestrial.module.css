@@ -51,6 +51,7 @@
 
 .legacy h2 {
   font-size: 5.5vw;
+  font-size: 5rem;
   letter-spacing: 4px;
   font-weight: 400;
   display: flex;
@@ -114,8 +115,8 @@
 /* =============exclusive2=========== */
 .marquee {
 
-  margin-top: 12%;
-  margin-bottom: 2%;
+  margin-top: 4%;
+  margin-bottom: 3%;
 }
 
 .exclusive2 {
@@ -305,9 +306,10 @@
   }
 
   .exclusive p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     width: 98%;
     margin-top: 20px;
+    text-align: justify;
   }
 
   .exclusive2 {

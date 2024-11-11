@@ -19,13 +19,11 @@
 
 .welcomeHeader img {
   width: 45%;
-  /* max-width: 600px; */
 }
 
 .container h1 {
   font-size: 6.2vw;
   padding: 20px 0;
-  /* padding-left: 80px; */
   font-weight: bold;
   font-family: 'lemon-regular';
 }
@@ -105,7 +103,6 @@
 .container.industrial .contentInfo h2,
 .container.industrial .contentInfo p {
   color: white;
-  /* Text color change */
 }
 
 .contentInfo {
@@ -182,7 +179,6 @@
 .scaleText {
   transform: scale(1.1);
   opacity: 1;
-  /* Adjust scale as needed */
 }
 
 
@@ -225,20 +221,87 @@
   height: 200%;
 }
 
-/* Ensures content is on top of overlay */
 .container>* {
   position: relative;
   z-index: 1;
 }
+
+
+
+
+
+
+
+
+/* dummydummydummydummy */
+
+
+.overlayText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  transition: transform 0.3s ease;
+  transform-origin: center;
+  backface-visibility: hidden;
+  /* Prevents shifting */
+  will-change: transform;
+  /* Optimizes performance */
+}
+
+.agroImg:hover .overlayText,
+.industrialImg:hover .overlayText {
+  transform: translate3d(-50%, -50%, 0) scale(1.1);
+}
+
+
+
+
+.agroImg,
+.industrialImg {
+  position: relative;
+  overflow: hidden;
+  transform: translateZ(0);
+  /* Creates a new stacking context */
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.content div img {
+  width: 100%;
+  transition: filter 0.3s ease;
+  transform: translateZ(0);
+  /* Prevents shifting */
+  backface-visibility: hidden;
+}
+
+.content div {
+  position: relative;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  aspect-ratio: 16/9;
+  /* Or whatever ratio matches your images */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* dummydummydummydummy */
+
+
+
+
+
+
+
+
+
 
 @media(max-width:800px) {
   .container {
     min-height: 100vh;
   }
 
-  .container h1 {
-    /* font-size: 4rem; */
-  }
 
   .content {
     width: 96%;
@@ -331,13 +394,11 @@
   transform: translate(-50%, -50%);
   transition: transform 0.3s ease;
   transform-origin: center;
-  /* Ensures scaling happens from the center */
 }
 
 .agroImg:hover .overlayText,
 .industrialImg:hover .overlayText {
   transform: translate(-50%, -50%) scale(1.1);
-  /* Scales without shifting */
 }
 
 .contentInfo p {
