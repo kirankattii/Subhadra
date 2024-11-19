@@ -1,6 +1,6 @@
 import { assets } from '../../../assets/images/assets'
 import { AnimatePresence, motion } from 'framer-motion'
-import styles from './agroProducts.module.css'
+import styles from './AgroProducts.module.css'
 import { useState } from 'react'
 
 const products = [
