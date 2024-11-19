@@ -106,7 +106,7 @@ const App = () => {
 						path="about-us"
 						element={<AboutAgro />}
 					/>
-					{/* <Route path="/agro/products" element={<AgroProducts />} /> */}
+					<Route path="/agro/products" element={<AgroProducts />} />
 					<Route
 						path="onion"
 						element={<OnionDetails />}
