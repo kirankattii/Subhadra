@@ -77,9 +77,8 @@ body {
   --lightGrey: #4f4f4f;
   --darkGrey: #010101;
   --green: #4BA040;
-
-
-  /* Neutral Colors */
+  --mildGold: #E8D3AE;
+  --mildGreen: #BAE2B5;
   --neutral-color-light: #ecf0f1;
   /* Light Gray */
   --neutral-color: #bdc3c7;

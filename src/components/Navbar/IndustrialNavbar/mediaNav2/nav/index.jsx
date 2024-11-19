@@ -19,8 +19,8 @@ const navbar = [
 		href: "/indestrial/about-us",
 	},
 	{
-		title: "Process",
-		href: "/indestrial/process",
+		title: "Products",
+		href: "/indestrial/products",
 	},
 	{
 		title: "Blogs",

@@ -20,6 +20,8 @@ import AboutIndestrial from "./pages/About/AboutIndestrial/AboutIndestrial"
 import AboutAgro from "./pages/About/AboutAgro/AboutAgro"
 import Contact from "./pages/Contact/Contact"
 import Blog from "./pages/Blog/Blog"
+import IndustrialProducts from "./pages/Products/IndustrialProducts/IndustrialProducts"
+import AgroProducts from "./pages/Products/AgroProducts/AgroProducts"
 
 const App = () => {
 	const location = useLocation()
@@ -45,6 +47,10 @@ const App = () => {
 					<Route
 						path="about-us"
 						element={<AboutIndestrial />}
+					/>
+					<Route
+						path="products"
+						element={<IndustrialProducts />}
 					/>
 					<Route
 						path="dolomite"
@@ -100,6 +106,7 @@ const App = () => {
 						path="about-us"
 						element={<AboutAgro />}
 					/>
+					<Route path="/agro/products" element={<AgroProducts />} />
 					<Route
 						path="onion"
 						element={<OnionDetails />}

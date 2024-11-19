@@ -18,8 +18,8 @@ const navbar = [
 		href: "/agro/about-us",
 	},
 	{
-		title: "Process",
-		href: "/process",
+		title: "Products",
+		href: "/products",
 	},
 	{
 		title: "Blogs",

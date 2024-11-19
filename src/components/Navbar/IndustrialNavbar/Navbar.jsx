@@ -69,8 +69,8 @@ const Navbar = () => {
 						ABOUT US
 					</Link>
 					<Link
-						to="/process"
-						style={{ color: location.pathname === "/process" ? "#B78F4A" : "" }}
+						to="/indestrial/products"
+						style={{ color: location.pathname === "/indestrial/products" ? "#B78F4A" : "" }}
 					>
 						PRODUCTS
 					</Link>

@@ -1,0 +1,57 @@
+.productsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.product {
+  background: var(--lightGold);
+}
+
+.product h1 {
+  font-family: 'BodoniModa';
+  font-size: 5.5rem;
+  text-align: center;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.productDetails {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 2fr;
+  align-items: center;
+  height: 240px;
+  background: var(--mildGold);
+  padding: 20px;
+  justify-content: center;
+}
+
+.productDetails h2 {
+  font-family: 'BodoniModa';
+  font-size: 3rem;
+  /* margin: auto; */
+  text-align: center;
+  margin-left: -25px;
+  line-height: 1.2;
+  width: 100%;
+}
+
+.productDetails p {
+  font-family: 'Bodoni-bd-bt';
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: center;
+  font-family: 'Bodoni-bk';
+  text-align: justify;
+  margin-top: -30px;
+  margin-right: 30px;
+}
+
+.productDetails img {
+  width: 200px;
+  margin: auto;
+  margin-bottom: 30px;
+}

@@ -67,8 +67,8 @@ const Navbar = () => {
 						ABOUT US
 					</NavLink>
 					<NavLink
-						to="/process"
-						style={{ color: location.pathname === "/process" ? "#4BA040" : "black" }}
+						to="/agro/products"
+						style={{ color: location.pathname === "/agro/products" ? "#4BA040" : "black" }}
 					>
 						PRODUCTS
 					</NavLink>
