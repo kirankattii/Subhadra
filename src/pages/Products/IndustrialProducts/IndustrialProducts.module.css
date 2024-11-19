@@ -1,3 +1,106 @@
+/* .container {
+  min-height: 100vh;
+  padding-top: 150px;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 150px;
+}
+
+.productsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.product {
+  background: var(--lightGold);
+}
+
+.product h1 {
+  font-family: 'BodoniModa';
+  font-size: 5.5rem;
+  text-align: center;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  line-height: 1.1;
+}
+
+.productDetails {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 2fr;
+  align-items: center;
+  height: 240px;
+  background: var(--mildGold);
+  padding: 20px;
+  justify-content: center;
+}
+
+.productDetails h2 {
+  font-family: 'BodoniModa';
+  font-size: 3rem;
+  text-align: center;
+  margin-left: -25px;
+  line-height: 1.2;
+  width: 100%;
+  margin-top: -25px;
+}
+
+.productDetails p {
+  font-family: 'Bodoni-bd-bt';
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: center;
+  font-family: 'Bodoni-bk';
+  text-align: justify;
+  margin-top: -30px;
+  margin-right: 30px;
+}
+
+.productDetails img {
+  width: 200px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+@media(max-width:1300px) {
+  .product h1 {
+    height: 270px;
+  }
+
+  .productDetails {
+    height: 270px;
+  }
+}
+
+@media(max-width:1200px) {
+  .productDetails h2 {
+    font-family: 'BodoniModa';
+    font-size: 3rem;
+    text-align: center;
+    margin-left: 0px;
+    line-height: 1.2;
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  .productDetails p {
+    font-family: 'Bodoni-bd-bt';
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Bodoni-bk';
+    text-align: justify;
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+} */
+
+
+
+
 .container {
   min-height: 100vh;
   padding-top: 150px;
@@ -41,7 +144,6 @@
 .productDetails h2 {
   font-family: 'BodoniModa';
   font-size: 3rem;
-  /* margin: auto; */
   text-align: center;
   margin-left: -25px;
   line-height: 1.2;
@@ -50,11 +152,9 @@
 }
 
 .productDetails p {
-  font-family: 'Bodoni-bd-bt';
+  font-family: 'Bodoni-bk';
   font-size: 1.4rem;
   font-weight: 400;
-  text-align: center;
-  font-family: 'Bodoni-bk';
   text-align: justify;
   margin-top: -30px;
   margin-right: 30px;
@@ -66,7 +166,8 @@
   margin-bottom: 30px;
 }
 
-@media(max-width:1300px) {
+/* Extra large screens (1300px and below) */
+@media (max-width: 1300px) {
   .product h1 {
     height: 270px;
   }
@@ -76,26 +177,103 @@
   }
 }
 
-@media(max-width:1200px) {
+/* Large screens (1200px and below) */
+@media (max-width: 1200px) {
   .productDetails h2 {
-    font-family: 'BodoniModa';
     font-size: 3rem;
-    /* margin: auto; */
-    text-align: center;
-    margin-left: 0px;
-    line-height: 1.2;
-    width: 100%;
-    margin-top: 0px;
+    margin-left: 0;
+    margin-top: 0;
   }
 
   .productDetails p {
-    font-family: 'Bodoni-bd-bt';
     font-size: 1.4rem;
-    font-weight: 400;
+    margin-top: 0;
+    margin-right: 0;
+  }
+}
+
+/* Medium screens (900px and below) */
+@media (max-width: 900px) {
+  .container {
+    padding-top: 100px;
+  }
+
+  .product h1 {
+    font-size: 4rem;
+    height: 180px;
+  }
+
+  .productDetails {
+    height: auto;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 30px 20px;
+  }
+
+  .productDetails img {
+    width: 150px;
+    margin: 0 auto;
+  }
+
+  .productDetails h2 {
+    font-size: 3rem;
+    margin: 0;
     text-align: center;
-    font-family: 'Bodoni-bk';
-    text-align: justify;
-    margin-top: 0px;
-    margin-right: 0px;
+  }
+
+  .productDetails p {
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+
+/* Small screens (600px and below) */
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding-top: 80px;
+  }
+
+  .product h1 {
+    font-size: 3rem;
+    height: 150px;
+  }
+
+  .productDetails {
+    padding: 20px 15px;
+  }
+
+  .productDetails img {
+    width: 120px;
+  }
+
+  .productDetails h2 {
+    font-size: 2.5rem;
+  }
+
+  .productDetails p {
+    font-size: 1.1rem;
+    padding: 0 10px;
+  }
+}
+
+/* Extra small screens (400px and below) */
+@media (max-width: 400px) {
+  .product h1 {
+    font-size: 2.5rem;
+    height: 120px;
+  }
+
+  .productDetails h2 {
+    font-size: 2rem;
+  }
+
+  .productDetails p {
+    font-size: 1rem;
+  }
+
+  .productDetails img {
+    width: 100px;
   }
 }
