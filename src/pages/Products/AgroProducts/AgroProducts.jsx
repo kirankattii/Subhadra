@@ -22,11 +22,17 @@ const products = [
   },
   {
     id: 3,
+    name: "RED CHILLI",
+    desc: "Our red chilli stands out for its vibrant color, intense heat, and exceptional flavor. Sourced from the finest farms, our red chilli is packed with essential nutrients, including vitamins A and C, and powerful antioxidants. Known for its fiery spice and rich aroma, it elevates a wide variety of dishes, from traditional recipes to modern cuisines.",
+    img: assets.redChilli,
+    link: "/agro/red-chilli"
+  },
+  {
+    id: 4,
     name: "GINGER",
     desc: "Sourced from the best-growing regions, our ginger boasts a robust, spicy kick and is rich in essential nutrients, including vitamins and minerals. Its natural anti-inflammatory and antioxidant properties make it a valuable addition to both culinary and medicinal applications. Carefully processed to preserve its aromatic oils and fresh taste, our ginger enhances a wide range of dishes while offering health benefits.",
     img: assets.ginger1,
     link: "/agro/ginger"
-
   },
 
 ]

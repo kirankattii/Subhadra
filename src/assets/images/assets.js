@@ -104,6 +104,11 @@ export const assets = {
 	riceField,
 	onionField,
 	gingerField,
+	red1,
+	red2,
+	red3,
+	redChilli,
+	chilliField,
 
 
 	// about
@@ -180,6 +185,9 @@ import the_subhadra_text from './text/the subhadraText.svg'
 import ofExcellence_text from './text/of ExcellenceText.svg'
 import step_into_text from './text/Step intoText.svg'
 import a_world_text from './text/a WorldText.svg'
+import chilliDark from './text/chillidark.svg'
+import chilliLight from './text/chillilight.svg'
+import chilliBlack from './text/chilliBlack.svg'
 
 export const text = {
 	dry,
@@ -209,7 +217,9 @@ export const text = {
 	manganese_small,
 	metallurgical_text,
 	coke_text,
-
+	chilliDark,
+	chilliLight,
+	chilliBlack
 }
 export const texts = {
 	blog_text,
@@ -242,3 +252,8 @@ import onion4 from "./agro/onion4.png"
 import riceField from "./agro/ricefield.png"
 import onionField from "./agro/onionField.png"
 import gingerField from "./agro/gignerField.png"
+import redChilli from './agro/redchilli.png'
+import red1 from './agro/redchilli1.png'
+import red2 from './agro/redchilli2.png'
+import red3 from './agro/redchilli3.png'
+import chilliField from './agro/chilliDetailImg.png'

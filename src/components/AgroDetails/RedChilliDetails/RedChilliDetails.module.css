@@ -1,0 +1,195 @@
+.container {
+  width: 94%;
+  margin: auto;
+  padding-top: 120px;
+  font-family: 'Bodoni-bk';
+  margin-bottom: 100px;
+}
+
+.contant {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.left {
+  /* width: 50%; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left img {
+  width: 80%;
+  display: flex;
+}
+
+.left p {
+  font-size: 21px;
+  text-align: justify;
+  /* max-width: 700px; */
+}
+
+.left h2 {
+  color: var(--gold);
+  font-size: 40px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.left ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 19px;
+}
+
+.right {
+  width: 110%;
+  display: flex;
+  flex-direction: column;
+  gap: 67px;
+}
+
+.right p {
+  font-size: 24px;
+  position: relative;
+  width: 120%;
+  margin-left: -20%;
+  text-align: end;
+}
+
+.images {
+  position: relative;
+  width: 100%;
+}
+
+.images .onionfield {
+  width: 100%;
+  min-width: 320px;
+}
+
+.images .onion {
+  width: 130%;
+  position: absolute;
+  left: 18%;
+  top: 86%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  display: none;
+
+}
+
+@media(max-width:1200px) {
+  .contant {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+}
+
+@media(max-width:900px) {
+  .container {
+    padding-top: 80px;
+  }
+
+  .contant {
+    flex-direction: column-reverse;
+  }
+
+  .left img {
+    display: none;
+  }
+
+  .title {
+    display: flex;
+    width: 100%;
+    margin: auto;
+  }
+
+  .title img {
+    width: 70%;
+    margin: auto;
+    padding-bottom: 30px;
+    margin-top: 50px;
+  }
+
+  .right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .images {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .images .onionfield {
+    width: 50%;
+    min-width: 280px;
+  }
+
+  .images .onion {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+
+  }
+
+  .right p {
+    font-size: 22px;
+    word-wrap: normal;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+  }
+
+}
+
+@media(max-width:600px) {
+  .left p {
+    font-size: 19px;
+    margin-top: 36px;
+  }
+
+  .left ul {
+    list-style: circle;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  .images .onion {
+    width: 65%;
+    margin-top: 30px;
+  }
+
+  .title img {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 30px;
+    margin-top: 20px;
+  }
+
+  .right p {
+    margin-top: 30px;
+  }
+}
+
+@media(max-width:500px) {
+  .images .onion {
+    width: 75%;
+  }
+}

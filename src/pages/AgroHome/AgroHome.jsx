@@ -1,6 +1,7 @@
 import AgroLanding from "../../components/AgroHomeComp/AgroLanding/AgroLanding"
 import Ginger from "../../components/AgroHomeComp/Ginger/Ginger"
 import Onions from "../../components/AgroHomeComp/Onions/Onions"
+import RedChilli from "../../components/AgroHomeComp/RedChilli/RedChilli"
 import Rice from "../../components/AgroHomeComp/Rice/Rice"
 import ThreeProducts from "../../components/AgroHomeComp/ThreeProducts/ThreeProducts"
 import Contact from "../../components/HomeComp/Contact/Contact"
@@ -13,6 +14,7 @@ const AgroHome = () => {
 			<ThreeProducts />
 			<Onions />
 			<Rice />
+			<RedChilli />
 			<Ginger />
 			{/* <Contact
 				contColor={"#4BA040"}

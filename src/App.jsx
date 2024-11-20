@@ -22,6 +22,7 @@ import Contact from "./pages/Contact/Contact"
 import Blog from "./pages/Blog/Blog"
 import IndustrialProducts from "./pages/Products/IndustrialProducts/IndustrialProducts"
 import AgroProducts from "./pages/Products/AgroProducts/AgroProducts"
+import RedChilliDetails from "./components/AgroDetails/RedChilliDetails/RedChilliDetails"
 
 const App = () => {
 	const location = useLocation()
@@ -118,6 +119,10 @@ const App = () => {
 					<Route
 						path="ginger"
 						element={<GingerDetails />}
+					/>
+					<Route
+						path="red-chilli"
+						element={<RedChilliDetails />}
 					/>
 					<Route path="contact-us"
 						element={<Contact contColor={"#4BA040"}
