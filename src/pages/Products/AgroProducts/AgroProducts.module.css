@@ -131,6 +131,7 @@
   background: var(--mildGreen);
   padding: 20px;
   justify-content: center;
+  cursor: pointer;
 }
 
 .productDetails h2 {

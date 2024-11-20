@@ -139,6 +139,7 @@
   background: var(--mildGold);
   padding: 20px;
   justify-content: center;
+  cursor: pointer;
 }
 
 .productDetails h2 {

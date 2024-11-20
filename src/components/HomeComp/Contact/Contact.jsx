@@ -187,7 +187,7 @@ const Contact = ({ contColor, switchColor, text, nav }) => {
 						onMouseEnter={handleMapHover}
 						onMouseLeave={handleMapLeave}
 					>
-						<img src={assets.gmap} alt="" />
+						<img src={assets.hoverMap} alt="" />
 						<AnimatePresence>
 							{isMapVisible && (
 								<motion.div

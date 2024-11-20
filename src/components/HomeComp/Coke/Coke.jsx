@@ -39,7 +39,7 @@ const Coke = () => {
           />
         </div>
       </div>
-      <h2 onClick={() => navigate("/indestrial/calcined-dolomite")}>
+      <h2 onClick={() => navigate("/indestrial/metallurgical-coke")}>
         KNOW MORE
       </h2>
       <div className={styles.dryash}>

@@ -54,6 +54,7 @@ import agroPVT from './agro pvt ld.png'
 import industrialPVT from './industrial pvt ld.png'
 import industrialPVT2 from './industrial pvt2.png'
 import agroPVT2 from './agro pvt2.png'
+import hoverMap from './hovermap.png'
 
 
 export const assets = {
@@ -136,6 +137,7 @@ export const assets = {
 	industrialPVT,
 	industrialPVT2,
 	agroPVT2,
+	hoverMap
 }
 
 export const homestones = [

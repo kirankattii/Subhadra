@@ -2,25 +2,31 @@ import { assets } from '../../../assets/images/assets'
 import { AnimatePresence, motion } from 'framer-motion'
 import styles from './AgroProducts.module.css'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const products = [
   {
     id: 1,
     name: "ONIONS",
     desc: "Sourced from premium farms, these onions are rich in essential nutrients like vitamins C and B6, and minerals such as potassium. Known for their antioxidant and anti-inflammatory properties. Our onions support heart health by helping to lower blood pressure and cholesterol levels while aiding digestion with their high fiber content.",
-    img: assets.onion1
+    img: assets.onion1,
+    link: "/agro/onion"
   },
   {
     id: 2,
     name: "RICE",
     desc: "Sourced from the finest fields, our rice is rich in essential nutrients, including vitamins and minerals, making it a healthy choice for any meal. Its superior texture and flavor enhance a variety of dishes, from everyday meals to gourmet creations. Our rice is meticulously processed to retain its natural goodness and ensure a fluffy, aromatic result every time.",
-    img: assets.riceImg
+    img: assets.riceImg,
+    link: "/agro/rice"
+
   },
   {
     id: 3,
     name: "GINGER",
     desc: "Sourced from the best-growing regions, our ginger boasts a robust, spicy kick and is rich in essential nutrients, including vitamins and minerals. Its natural anti-inflammatory and antioxidant properties make it a valuable addition to both culinary and medicinal applications. Carefully processed to preserve its aromatic oils and fresh taste, our ginger enhances a wide range of dishes while offering health benefits.",
-    img: assets.ginger1
+    img: assets.ginger1,
+    link: "/agro/ginger"
+
   },
 
 ]
@@ -28,6 +34,7 @@ const products = [
 const AgroProducts = () => {
   const [hoveredProductId, setHoveredProductId] = useState(null);
 
+  const navigate = useNavigate()
   return (
     <div className={styles.container}>
       <div className={styles.productsContainer}>
@@ -41,6 +48,7 @@ const AgroProducts = () => {
             <AnimatePresence mode="wait">
               {hoveredProductId === product.id ? (
                 <motion.div
+                  onClick={() => navigate(product.link)}
                   key="details"
                   className={styles.productDetails}
                   initial={{ opacity: 0, }}
