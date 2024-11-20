@@ -40,6 +40,14 @@ const ThreeProducts = () => {
 						src={assets.onion1}
 						alt=""
 					/>
+					<motion.img
+						initial={{ scale: 1 }}
+						whileHover={{ scale: 1.15 }}
+						transition={{ duration: 0.4 }}
+						src={assets.redChilli}
+						alt=""
+					/>
+
 				</div>
 				<div className={styles.greenContent}></div>
 			</div>
