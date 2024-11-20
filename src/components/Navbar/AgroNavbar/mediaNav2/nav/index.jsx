@@ -19,7 +19,7 @@ const navbar = [
 	},
 	{
 		title: "Products",
-		href: "/products",
+		href: "/agro/products",
 	},
 	{
 		title: "Blogs",
