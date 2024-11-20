@@ -23,6 +23,8 @@ import Blog from "./pages/Blog/Blog"
 import IndustrialProducts from "./pages/Products/IndustrialProducts/IndustrialProducts"
 import AgroProducts from "./pages/Products/AgroProducts/AgroProducts"
 import RedChilliDetails from "./components/AgroDetails/RedChilliDetails/RedChilliDetails"
+import AgroBlog from "./pages/Blog/AgroBlog/AgroBlog"
+import IndustrialBlog from "./pages/Blog/IndustrialBlog/IndustrialBlog"
 
 const App = () => {
 	const location = useLocation()
@@ -87,7 +89,7 @@ const App = () => {
 							text={"Switch To Agro"}
 							nav={"/agro"} />}
 					/>
-					<Route path="blogs" element={<Blog switchColor={"#4BA040"}
+					<Route path="blogs" element={<IndustrialBlog switchColor={"#4BA040"}
 						contColor={"#B78F4A"}
 						text={"Switch To Agro"}
 						nav={"/agro"}
@@ -131,7 +133,7 @@ const App = () => {
 							nav={"/indestrial"} />}
 					/>
 					<Route path="blogs"
-						element={<Blog
+						element={<AgroBlog
 							contColor={"#4BA040"}
 							switchColor={"#B78F4A"}
 							text={"Switch To Industrial"}

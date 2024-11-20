@@ -68,11 +68,12 @@
 
 .images .onionfield {
   width: 100%;
-  min-width: 320px;
+  min-width: 300px;
+  margin-top: -15px;
 }
 
 .images .onion {
-  width: 130%;
+  width: 110%;
   position: absolute;
   left: 24%;
   top: 92%;

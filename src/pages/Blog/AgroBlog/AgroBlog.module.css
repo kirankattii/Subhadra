@@ -36,7 +36,7 @@
 
 .blog1 h1 {
   color: transparent;
-  -webkit-text-stroke: 2px var(--lightGold);
+  -webkit-text-stroke: 2px var(--green);
   font-size: 11vw;
   margin-top: -20px;
   font-family: 'Bodoni-bd-bt';
@@ -50,7 +50,7 @@
 .blog2 {
   display: flex;
   flex-direction: column;
-  border: 1px solid var(--lightGold);
+  border: 1px solid var(--green);
   padding: 15px;
   gap: 5px;
   position: relative;
@@ -158,7 +158,7 @@
 
   .blog1 h1 {
     color: transparent;
-    -webkit-text-stroke: 2px var(--lightGold);
+    -webkit-text-stroke: 2px var(--green);
     font-size: 11vw;
     margin-top: -20px;
     font-family: 'Bodoni-bd-bt';
@@ -190,7 +190,7 @@
 
   .blog1 h1 {
     color: transparent;
-    -webkit-text-stroke: 1px var(--lightGold);
+    -webkit-text-stroke: 1px var(--green);
     font-size: 11vw;
     margin-top: 0px;
     font-family: 'Bodoni-bd-bt';
@@ -218,7 +218,7 @@
 
   .blog1 h1 {
     color: transparent;
-    -webkit-text-stroke: 2px var(--lightGold);
+    -webkit-text-stroke: 2px var(--green);
     font-size: 20vw;
     margin-top: 0px;
     font-family: 'Bodoni-bd-bt';

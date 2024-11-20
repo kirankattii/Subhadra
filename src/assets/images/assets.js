@@ -39,6 +39,10 @@ import blogImg1 from './blogimg1.png'
 import blogImg11 from './blogimg11.png'
 import blogImg2 from './blogimg2.png'
 import arrowBlogs from './leftArray.png'
+import agroBlog1 from './agroblog2.png'
+import agroBlog2 from './agroblog3.png'
+import agroBlogArrow from './agroBlogArrow.png'
+import industrialBlog from './industrialblog1.png'
 
 
 // logos
@@ -127,7 +131,10 @@ export const assets = {
 	blogImg11,
 	blogImg2,
 	arrowBlogs,
-
+	agroBlog1,
+	agroBlog2,
+	agroBlogArrow,
+	industrialBlog,
 
 	//logos
 	logowhite,
