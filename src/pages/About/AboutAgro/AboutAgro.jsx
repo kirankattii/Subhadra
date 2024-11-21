@@ -20,6 +20,16 @@ const AgroIndestrial = () => {
   const scale = useTransform(scrollY, [start, end], [1, 0.8]);
 
 
+  const ref2 = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref2,
+    offset: ["start start", "end start"]
+  });
+
+  const opacity2 = useTransform(scrollYProgress, [0, 0.4], [1, 0]);
+
+
+
   return (
     <div ref={ref} className={styles.container}>
 
@@ -49,8 +59,12 @@ const AgroIndestrial = () => {
           }}>A Legacy of Distinction</motion.h2>
         <p>For over 45 years, Subhadra Commercial Pvt Ltd has been a hallmark of excellence and prestige in the export of premium-quality agro products. Our name is trusted by esteemed markets across West Africa, the Middle East, and Southeast Asia, symbolizing our unwavering dedication to quality, freshness, and distinction.</p>
       </div>
-      <div className={styles.exclusive}>
-        <div className={styles.exclusiveContents}>
+      <motion.div
+        ref={ref2}
+        style={{ opacity: opacity2 }}
+        className={styles.exclusive}>
+        <div className={styles.exclusiveContents}
+        >
           <div className={styles.exclusiveContent}>
             <h2>Exclusive <br /> Partnerships <br /> with Prestigious </h2>
             <h1>CLIENT</h1>
@@ -68,7 +82,7 @@ const AgroIndestrial = () => {
             ease: "linear",
             duration: 0.4,
           }}>Our commitment to providing only the finest has fostered strong partnerships with renowned global markets, including those in West Africa, the Middle East, and Southeast Asia. These lasting relationships are built on mutual trust, exceptional service, and the consistent delivery of superior-quality agro products.</motion.p>
-      </div>
+      </motion.div>
       <div className={styles.exclusive2}>
         <motion.h2 initial={{ x: -80, y: -80, opacity: 0.5 }}
           whileInView={{ x: 0, y: 0, opacity: 1 }}
@@ -104,7 +118,7 @@ const AgroIndestrial = () => {
             //  initial={{ x: -200, y: 200, opacity: 0.5 }}
             //   whileInView={{ x: 0, y: 0, opacity: 1 }}
             initial={{ scale: 0.5, opacity: 0.5 }}
-            whileInView={{ scale: 1, opacity: 1 }}
+            whileInView={{ scale: 1, opacity: 1 }} a
             transition={{
               ease: "linear",
               duration: 0.5,

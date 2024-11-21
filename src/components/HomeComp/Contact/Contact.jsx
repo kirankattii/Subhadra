@@ -198,14 +198,15 @@ const Contact = ({ contColor, switchColor, text, nav }) => {
 									<button className={styles.closeButton} onClick={handleMapClose}>
 										X
 									</button>
-									<iframe
+									{/* <iframe
 										loading="false"
 										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61526.32158201618!2d74.95646584899545!3d15.463165819812867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb8cd62d889aba7%3A0x5a4f2144717bcf70!2sDharwad%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1727153389526!5m2!1sen!2sin"
 										style={{ border: 0, opacity: 1, transition: 'none' }}
 
 										// allowFullScreen=""
 										referrerPolicy="no-referrer-when-downgrade"
-									></iframe>
+									></iframe> */}
+									<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3657.4246368951744!2d87.26089451205831!3d23.553187896228295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sG.T.%20Road%2C%20Old%20Court%20More%2C%20Durgapur-713203%2C%20Dist.%20%3A%20Burdwan%2C%20West%20Bengal%2C%20India.!5e0!3m2!1sen!2sin!4v1732171791228!5m2!1sen!2sin" style={{ border: 0, opacity: 1, transition: 'none' }} referrerpolicy="no-referrer-when-downgrade"></iframe>
 								</motion.div>
 							)}
 						</AnimatePresence>

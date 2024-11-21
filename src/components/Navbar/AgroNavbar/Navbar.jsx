@@ -3,6 +3,7 @@ import { Link, NavLink, useLocation } from "react-router-dom"
 import styles from "./navbar.module.css"
 import { MediaNav2 } from "./mediaNav2"
 import { assets } from "../../../assets/images/assets"
+import AnimatedCursor from "react-animated-cursor"
 
 const Navbar = () => {
 	const [scrolled, setScrolled] = useState(false)
@@ -42,15 +43,14 @@ const Navbar = () => {
 
 	return (
 		<>
+
 			<header
 				className={`${styles.header} ${scrolled ? styles.scrolled : ""} ${scrollDirection === "down" ? styles.hide : ""
 					}`}
 			>
+
 				<div className={styles.logo}>
-					{/* {location.pathname.includes('/contact-us') ?
-						<img src={assets.logowhite} alt="" /> :
-						<img src={assets.logoblack} alt="" />
-					} */}
+
 					<Link to="/">	<img src={assets.subhadraLogo} alt="" /></Link>
 				</div>
 				<nav className={styles.nav}>
