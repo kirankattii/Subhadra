@@ -236,7 +236,7 @@ const Contact = ({ contColor, switchColor, text, nav }) => {
 								/>
 								<input
 									type="text"
-									placeholder="First Name"
+									placeholder="Last Name"
 									className={styles.input}
 								/>
 							</div>

@@ -29,8 +29,7 @@ const Footer = ({ switchColor, text, nav }) => {
 							whileTap={{ scale: 0.9 }} >Phone</motion.p>
 						<div className={styles.infoBox}>
 							<span>
-								Phone: <a href="tel:7797821111">7797821111</a> <br />
-								Telefax: <a href="tel:03432585058">0343 2585058</a>
+								Phone: <a href="tel:+919800881998">+919800881998</a>
 							</span>
 						</div>
 					</div>
@@ -39,7 +38,7 @@ const Footer = ({ switchColor, text, nav }) => {
 							whileTap={{ scale: 0.9 }} >Email</motion.p>
 						<div className={styles.infoBox}>
 							<span>
-								<a href="mailto:scpl.dgp@gmail.com">scpl.dgp@gmail.com</a>
+								<a href="mailto:info@subhadracommercials.com">info@subhadracommercials.com</a>
 							</span>
 						</div>
 					</div>

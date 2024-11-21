@@ -135,7 +135,7 @@ const AboutIndestrial = () => {
           ))}
         </div>
       </Marquee>
-      <div className={styles.exclusive2}>
+      {/* <div className={styles.exclusive2}>
         <motion.h2
           initial={{ x: -80, y: -80, opacity: 0.5 }}
           whileInView={{ x: 0, y: 0, opacity: 1 }}
@@ -171,7 +171,7 @@ const AboutIndestrial = () => {
             Amalgam Steel, Narsingh Ispat, Atibir Units, and Shyam Sel.
           </motion.p>
         </div>
-      </div>
+      </div> */}
       <div className={styles.collections}>
         <motion.h2
           initial={{ y: 120, opacity: 0.5 }}

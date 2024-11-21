@@ -81,9 +81,9 @@ const AgroIndestrial = () => {
           transition={{
             ease: "linear",
             duration: 0.4,
-          }}>Our commitment to providing only the finest has fostered strong partnerships with renowned global markets, including those in West Africa, the Middle East, and Southeast Asia. These lasting relationships are built on mutual trust, exceptional service, and the consistent delivery of superior-quality agro products.</motion.p>
+          }}>Our commitment to providing only the finest has fostered strong partnerships with renowned global markets. These lasting relationships are built on mutual trust, exceptional service, and the consistent delivery of superior-quality agro products.</motion.p>
       </motion.div>
-      <div className={styles.exclusive2}>
+      {/* <div className={styles.exclusive2}>
         <motion.h2 initial={{ x: -80, y: -80, opacity: 0.5 }}
           whileInView={{ x: 0, y: 0, opacity: 1 }}
           transition={{
@@ -104,7 +104,7 @@ const AgroIndestrial = () => {
               duration: 0.3,
             }}>Our commitment to providing only the finest has fostered strong partnerships with renowned global markets, including those in West Africa, the Middle East, and Southeast Asia. These lasting relationships are built on mutual trust, exceptional service, and the consistent delivery of superior-quality agro products.</motion.p>
         </div>
-      </div>
+      </div> */}
       <div className={styles.collections}>
         <motion.h2 initial={{ y: 120, opacity: 0.5 }}
           whileInView={{ y: 0, opacity: 1 }}
