@@ -26,7 +26,7 @@ const AgroIndestrial = () => {
     offset: ["start start", "end start"]
   });
 
-  const opacity2 = useTransform(scrollYProgress, [0, 0.4], [1, 0]);
+  const opacity2 = useTransform(scrollYProgress, [0, 0.8], [4, 0]);
 
 
 
