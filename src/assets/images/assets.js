@@ -135,6 +135,7 @@ export const assets = {
 	agroBlog2,
 	agroBlogArrow,
 	industrialBlog,
+	firstAgroBlog,
 
 	//logos
 	logowhite,
@@ -264,3 +265,20 @@ import red1 from './agro/redchilli1.png'
 import red2 from './agro/redchilli2.png'
 import red3 from './agro/redchilli3.png'
 import chilliField from './agro/chilliDetailImg.png'
+
+
+
+
+import firstAgroBlog from './blogs/firstAgroBlogImg.png'
+import agroBlog4 from './blogs/agroBlog4.png'
+import agroBlog5 from './blogs/agroBlog5.png'
+import industrialBlog4 from './blogs/indistrialblog4.png'
+import industrialBlog5 from './blogs/industrialblog5.png'
+
+export const blogs = {
+	agroBlog4,
+	agroBlog5,
+	industrialBlog4,
+	industrialBlog5,
+
+}

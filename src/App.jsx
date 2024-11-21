@@ -25,6 +25,9 @@ import AgroProducts from "./pages/Products/AgroProducts/AgroProducts"
 import RedChilliDetails from "./components/AgroDetails/RedChilliDetails/RedChilliDetails"
 import AgroBlog from "./pages/Blog/AgroBlog/AgroBlog"
 import IndustrialBlog from "./pages/Blog/IndustrialBlog/IndustrialBlog"
+import AgroBlogDetails from "./pages/BlogDetails/AgroBlogDetails/AgroBlogDetails"
+import IndustrialBlogDetails from "./pages/BlogDetails/IndustrialBlogDetails/IndustrialBlogDetails"
+
 
 const App = () => {
 	const location = useLocation()
@@ -83,6 +86,10 @@ const App = () => {
 						path="metallurgical-coke"
 						element={<Coke />}
 					/>
+					<Route
+						path="industrial-content"
+						element={<IndustrialBlogDetails />}
+					/>
 					<Route path="contact-us"
 						element={<Contact switchColor={"#4BA040"}
 							contColor={"#B78F4A"}
@@ -125,6 +132,10 @@ const App = () => {
 					<Route
 						path="red-chilli"
 						element={<RedChilliDetails />}
+					/>
+					<Route
+						path="blog-content"
+						element={<AgroBlogDetails />}
 					/>
 					<Route path="contact-us"
 						element={<Contact contColor={"#4BA040"}

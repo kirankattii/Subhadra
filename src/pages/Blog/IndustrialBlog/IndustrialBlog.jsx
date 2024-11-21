@@ -1,7 +1,9 @@
+import { useNavigate } from 'react-router-dom'
 import { assets, text } from '../../../assets/images/assets'
 import styles from './IndustrialBlog.module.css'
 
 const IndustrialBlog = () => {
+  const navigate = useNavigate()
   return (
     <>
       {/* <Navbar /> */}
@@ -19,7 +21,7 @@ const IndustrialBlog = () => {
             <h2>The Role of Premium Materials in Modern Manufacturing</h2>
             <hr />
             <p>In today’s fast-paced industrial landscape, the demand for high-performance materials is crucial. Our Low Silica Bhutan Dolomite and Quartzite stand out as premium solutions, offering superior durability and precision for a wide range of applications. By investing in quality materials, industries can optimize efficiency, reduce downtime, and enhance product performance, ensuring long-term success and reliability. Discover how choosing the right materials can elevate your operations and deliver excellence at every step.</p>
-            <img src={assets.arrowBlogs} alt="" />
+            <img style={{ cursor: 'pointer' }} src={assets.arrowBlogs} alt="" onClick={() => navigate('/indestrial/industrial-content')} />
           </div>
           <div className={styles.blog3}>
             <img src={assets.industrialBlog} alt="" />
