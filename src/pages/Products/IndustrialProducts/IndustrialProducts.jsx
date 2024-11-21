@@ -66,10 +66,38 @@ const products = [
 
 const IndustrialProducts = () => {
   const [hoveredProductId, setHoveredProductId] = useState(null);
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+  const [showCustomCursor, setShowCustomCursor] = useState(false);
+
+  const handleMouseMove = (e) => {
+    setCursorPosition({ x: e.clientX, y: e.clientY });
+  };
+
+  const handleDetailsMouseEnter = () => {
+    setShowCustomCursor(true);
+  };
+
+  const handleDetailsMouseLeave = () => {
+    setShowCustomCursor(false);
+  };
   const navigate = useNavigate()
 
   return (
     <div className={styles.container}>
+      {showCustomCursor && (
+        <motion.div
+          className={styles.customCursor}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          style={{
+            left: cursorPosition.x,
+            top: cursorPosition.y,
+          }}
+        >
+          Click
+        </motion.div>
+      )}
       <div className={styles.productsContainer}>
         {products.map((product) => (
           <motion.div
@@ -88,6 +116,9 @@ const IndustrialProducts = () => {
                   animate={{ opacity: 1, }}
                   exit={{ opacity: 0, }}
                   transition={{ duration: 0.3 }}
+                  onMouseMove={handleMouseMove}
+                  onMouseEnter={handleDetailsMouseEnter}
+                  onMouseLeave={handleDetailsMouseLeave}
                 >
                   <motion.img
                     src={product.img}
