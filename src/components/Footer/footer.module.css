@@ -216,12 +216,12 @@
   }
 
   .email div {
-    left: -100px;
-    width: 160px;
+    left: -120px;
+    width: 230px;
     top: -60px;
   }
 
   .email div::after {
-    left: 120px;
+    left: 135px;
   }
 }
