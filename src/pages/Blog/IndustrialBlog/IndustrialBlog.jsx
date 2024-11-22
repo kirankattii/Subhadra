@@ -18,9 +18,10 @@ const IndustrialBlog = () => {
             <h2>Insights & innovations</h2>
           </div>
           <div className={styles.blog2}>
-            <h2>The Role of Premium Materials in Modern Manufacturing</h2>
+            <h2>Fueling the steel industry
+              subhadra’s coal and coal expertise</h2>
             <hr />
-            <p>In today’s fast-paced industrial landscape, the demand for high-performance materials is crucial. Our Low Silica Bhutan Dolomite and Quartzite stand out as premium solutions, offering superior durability and precision for a wide range of applications. By investing in quality materials, industries can optimize efficiency, reduce downtime, and enhance product performance, ensuring long-term success and reliability. Discover how choosing the right materials can elevate your operations and deliver excellence at every step.</p>
+            <p>The steel industry is the backbone of modern infrastructure, powering the construction of skyscrapers, bridges, and transportation systems that connect our world. At the heart of this industry lies a critical raw material: high-quality coal and coke. Subhadra Commercial Pvt. Ltd., with decades of experience, has established itself as a trusted supplier of these indispensable resources, playing a pivotal role in driving industrial progress.</p>
             <img style={{ cursor: 'pointer' }} src={assets.arrowBlogs} alt="" onClick={() => navigate('/indestrial/industrial-content')} />
           </div>
           <div className={styles.blog3}>
