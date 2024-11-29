@@ -162,12 +162,23 @@ const AgroIndestrial = () => {
           <img src={assets.aboutAgro1} alt="" />
         </div>
       </div>
-      <div className={styles.footer}>
+      <div className={styles.certificate}>
+        <h2>Certified Excellence in Global Trade</h2>
+        <div className={styles.certificateContents}>
+          <div>
+            <p>Subhadra Commercial Private Limited is proud to be recognized as a One Star Export House by the Government of India. This prestigious certification, awarded under the Foreign Trade Policy 2023, highlights our commitment to excellence in international trade and consistent contribution to the nation's export growth. Valid from October 1, 2023, to March 31, 2028, this achievement underscores our dedication to delivering quality and strengthening India's global trade presence.</p>
+            <p>This recognition reinforces our position as a trusted name in global trade, driving innovation and reliability in every transaction. At Subhadra Commercial Private Limited, we remain committed to expanding our horizons and setting new benchmarks in quality and service for international markets.</p>
+          </div>
+          <motion.img
+            initial={{ scale: 0.9, }}
+            whileHover={{ scale: 1, }}
+            transition={{
+              ease: "anticipate",
+              duration: 0.4,
+            }}
+            src={assets.certificate} alt="" />
+        </div>
 
-        {/* <Contact contColor={"#4BA040"}
-          switchColor={"#B78F4A"}
-          text={"Switch To Industrial"}
-          nav={"/indestrial"} /> */}
       </div>
     </div>
   )

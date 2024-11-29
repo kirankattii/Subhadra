@@ -150,7 +150,10 @@ export const assets = {
 	industrialPVT,
 	industrialPVT2,
 	agroPVT2,
-	hoverMap
+	hoverMap,
+
+	certificate
+
 }
 
 export const homestones = [
@@ -196,6 +199,8 @@ import a_world_text from './text/a WorldText.svg'
 import chilliDark from './text/chillidark.svg'
 import chilliLight from './text/chillilight.svg'
 import chilliBlack from './text/chilliBlack.svg'
+import certificate from './certificate.png'
+
 
 export const text = {
 	dry,
@@ -227,7 +232,7 @@ export const text = {
 	coke_text,
 	chilliDark,
 	chilliLight,
-	chilliBlack
+	chilliBlack,
 }
 export const texts = {
 	blog_text,
@@ -274,6 +279,8 @@ import agroBlog4 from './blogs/agroBlog4.png'
 import agroBlog5 from './blogs/agroBlog5.png'
 import industrialBlog4 from './blogs/indistrialblog4.png'
 import industrialBlog5 from './blogs/industrialblog5.png'
+
+
 
 export const blogs = {
 	agroBlog4,

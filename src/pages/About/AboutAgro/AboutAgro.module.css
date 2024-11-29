@@ -243,12 +243,67 @@
   margin-top: 150px;
 }
 
+.certificate {
+  display: flex;
+  flex-direction: column;
+  width: 92%;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.certificateContents {
+  display: flex;
+  gap: 20px;
+}
+
+.certificate h2 {
+  font-size: 4rem;
+  text-align: center;
+  font-family: 'Bodoni-bd-bt';
+  font-weight: 500;
+  font-family: 'Bodoni-bk';
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.certificateContents div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.certificate img {
+  width: 45%;
+}
+
+.certificate p {
+  font-size: 22px;
+  text-align: justify;
+}
 
 @media(max-width:1200px) {
   .landing img {
     width: 85%;
     /* margin: auto; */
     background: #000;
+  }
+
+  .certificate {
+    width: 94%;
+  }
+
+  .certificate p {
+    font-size: 20px;
+  }
+
+  .certificateContents div {
+    margin-top: 0px;
+  }
+
+  .certificate h2 {
+    font-size: 3rem;
   }
 }
 
@@ -375,6 +430,22 @@
   .luxury p {
     font-size: 1.3rem;
   }
+
+
+
+  .certificateContents {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .certificate img {
+    width: 60%;
+  }
+
+  .certificate h2 {
+    font-size: 3rem;
+  }
 }
 
 @media(max-width:700px) {
@@ -406,6 +477,15 @@
   .exclusive h2 {
 
     margin-bottom: 0px;
+  }
+
+  .certificate img {
+    width: 94%;
+  }
+
+  .certificate h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
   }
 
 }
@@ -476,7 +556,20 @@
   }
 
   .luxury p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-top: 5px;
+  }
+
+  .certificate img {
+    width: 94%;
+  }
+
+  .certificate p {
+    font-size: 19px;
+  }
+
+  .certificate h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
   }
 }
